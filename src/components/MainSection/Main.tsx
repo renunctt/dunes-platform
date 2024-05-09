@@ -27,8 +27,7 @@ export const Main = () => {
 
 	return (
 		<main className={styles.main}>
-			<div className={`${styles.mainWrapper} my-container`}>
-				<video
+			<video
 					ref={videoRef}
 					className={styles.video}
 					autoPlay
@@ -37,6 +36,8 @@ export const Main = () => {
 					playsInline
 					src={bgVideo}
 				/>
+			<div className={`${styles.mainWrapper} my-container`}>
+			
 
 				<h1 className={styles.title}>
 					Join the most innovative <span>launchpad</span> of 2024

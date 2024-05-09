@@ -102,3 +102,7 @@ button {
   border: none;
   cursor: pointer;
 }
+
+video::-webkit-media-controls {
+  display: none;
+}

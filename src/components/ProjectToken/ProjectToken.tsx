@@ -10,7 +10,7 @@ export const ProjectToken = () => {
 				<div className={styles.tokenTop}>
 					<div className={styles.tokenTopWrapper}>
 						<FledAnimation>
-							<h2 className={styles.title}>Tokenmics</h2>
+							<h2 className={styles.title}>Tokenomics</h2>
 						</FledAnimation>
 
 						<img className={styles.left} src={leftIcon} alt='' />

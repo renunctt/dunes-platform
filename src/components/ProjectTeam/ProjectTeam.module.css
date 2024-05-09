@@ -3,6 +3,13 @@
   border-bottom: var(--primary-border);
 }
 
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
 .teamWrapper {
   border-left: var(--primary-border);
   border-right: var(--primary-border);
@@ -31,12 +38,19 @@
   }
   .left {
     display: block;
+    padding-right: 30px;
   }
   .teamWrapper {
     border-right: none;
+    padding-right: 0;
+  }
+
+  .container {
+    padding-right: 0;
   }
 
   .teamCards {
+    width: 100%;
 		text-wrap: nowrap;
     white-space: nowrap;
     overflow-x: auto;

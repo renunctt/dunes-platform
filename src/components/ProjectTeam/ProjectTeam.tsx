@@ -6,7 +6,7 @@ import leftIcon from '../../assets/images/team/right.svg'
 export const ProjectTeam = () => {
   return (
     <section className={styles.team}>
-      <div className="my-container">
+      <div className={styles.container}>
         <div className={styles.teamWrapper}>
           <div className={styles.top}>
             <FledAnimation>

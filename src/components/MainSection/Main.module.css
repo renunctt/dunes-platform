@@ -81,5 +81,9 @@
   }
 
   .box button {
+    width: 130px;
+    font-size: 15px;
+    max-height: 34px;
+    min-height: 34px;
   }
 }

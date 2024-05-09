@@ -19,7 +19,6 @@ export const LinearRunner = () => {
           {cardDetails.map((card) => (
             <li key={card.title}>
               <img
-                style={{ filter: 'blur(4px)' }}
                 src={card.imgUrl}
                 alt={card.title}
               />
@@ -32,7 +31,6 @@ export const LinearRunner = () => {
           {cardDetails.map((card) => (
             <li key={card.title}>
               <img
-                style={{ filter: 'blur(4px)' }}
                 src={card.imgUrl}
                 alt={card.title}
               />

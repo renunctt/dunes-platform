@@ -1,3 +1,4 @@
+import { Counter } from '../Counter'
 import styles from './ProjectPrices.module.css'
 
 export const ProjectPrices = () => {
@@ -12,11 +13,11 @@ export const ProjectPrices = () => {
             </div>
             <div className={styles.item}>
               <p className={styles.title}>TOTAL SUPPLY</p>
-              <p className={styles.price}>1,000,000,000</p>
+              <p className={styles.price}><Counter targetNumber={1000000000}/></p>
             </div>
             <div className={styles.item}>
               <p className={styles.title}>LISTING VALUATION</p>
-              <p className={styles.price}>$12,000,000</p>
+              <p className={styles.price}>$<Counter targetNumber={12000000}/></p>
             </div>
           </div>
 
@@ -27,11 +28,11 @@ export const ProjectPrices = () => {
             </div>
             <div className={styles.item}>
               <p className={styles.title}>TOTAL SUPPLY</p>
-              <p className={styles.price}>$942,000</p>
+              <p className={styles.price}>$<Counter targetNumber={942000}/></p>
             </div>
             <div className={styles.item}>
               <p className={styles.title}>LISTING VALUATION</p>
-              <p className={styles.price}>$3,370,000</p>
+              <p className={styles.price}>$<Counter targetNumber={3370000}/></p>
             </div>
           </div>
         </div>

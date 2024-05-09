@@ -5,7 +5,7 @@
 .tokenWrapper {
 	border-left: var(--primary-border);
 	border-right: var(--primary-border);
-	padding: 43px 0;
+	padding-bottom: 43px;
 	white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -76,10 +76,38 @@
 	font-weight: 500;
 }
 
+.left {
+  display: none;
+}
+
+.tokenTop {
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+}
+
+.title {
+	padding-top: 37px;
+}
+
 @media (max-width: 890px) {
 	.tokenWrapper {
 	border-right: none;
 	}
+
+	.tokenTop {
+		border-right: none;
+	}
+
+	.tokenTopWrapper {
+    display: flex;
+    justify-content: space-between;
+		align-items: center;
+		padding-top: 37px;
+		padding-right: 25px;
+  }
+  .left {
+    display: block;
+  }
 
 	.topRound {
 		min-width: 200px;

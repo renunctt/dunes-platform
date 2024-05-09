@@ -46,7 +46,10 @@ export const LaunchpadSection = () => {
             <div className={styles.line4}></div>
             <div className={styles.line5}></div>
           </div>
+          <div className={styles.launchItem}>
           {isFinished ? <FinishedItems /> : <UpcomingItems />}
+
+          </div>
         </div>
       </div>
     </>

@@ -50,6 +50,7 @@
   text-transform: uppercase;
   background-size: cover;
   background-repeat: no-repeat;
+  font-weight: 500;
 }
 
 .buy {
@@ -71,16 +72,14 @@
 
   .desc {
     font-size: 16px;
+    width: 70%;
   }
 
   .box {
     padding-top: 42px;
+    flex-direction: column;
   }
 
   .box button {
-    width: 130px;
-    font-size: 15px;
-    max-height: 34px;
-    min-height: 34px;
   }
 }

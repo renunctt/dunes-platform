@@ -43,5 +43,6 @@
     overflow-y: hidden;
     scrollbar-width: thin;
     -webkit-overflow-scrolling: touch;
+    height: 400px;
   }
 }

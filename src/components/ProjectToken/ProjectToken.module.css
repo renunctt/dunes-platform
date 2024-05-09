@@ -1,0 +1,103 @@
+.token {
+	border-top: var(--primary-border);
+}
+
+.tokenWrapper {
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+	padding: 43px 0;
+	white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin; /* Для браузеров, поддерживающих новые спецификации CSS */
+  -webkit-overflow-scrolling: touch;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: 500;
+	font-family: var(--font-family-second);
+	text-transform: uppercase;
+	padding-left: 25px;
+}
+
+.tokenMics {
+	margin-top: 45px;
+	display: flex;
+	flex-direction: column;
+}
+
+.top {
+	display: flex;
+	padding-left: 25px;
+	margin-bottom: 15px;
+}
+
+.top p {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.topRound {
+	min-width: 250px;
+}
+
+.topAlloc {
+	min-width: 300px;
+}
+
+.info {
+	display: flex;
+	border-bottom: var(--primary-border);
+	padding: 14px 0;
+}
+
+.info p {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.round {
+	min-width: 275px;
+	padding-left: 25px;
+}
+
+.alloc {
+	min-width: 300px;
+}
+
+.infoTeam {
+	display: flex;
+	padding: 14px 0;
+}
+
+.infoTeam p {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+@media (max-width: 890px) {
+	.tokenWrapper {
+	border-right: none;
+	}
+
+	.topRound {
+		min-width: 200px;
+	}
+	
+	.topAlloc {
+		min-width: 250px;
+	}
+
+	.round {
+		min-width: 225px;
+	}
+	
+	.alloc {
+		min-width: 250px;
+	}
+
+	.info {
+		width: 978px;
+	}
+}

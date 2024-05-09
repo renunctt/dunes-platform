@@ -1,0 +1,412 @@
+.card {
+  display: flex;
+}
+
+.top {
+  width: 384px;
+  height: 47px;
+  border: var(--primary-border);
+  border-bottom: none;
+}
+
+.content {
+  height: 476px;
+  padding-top: 28px;
+  border: var(--primary-border);
+  border-color: #ffffff;
+  width: 385px;
+  border-right: none;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  gap: 20px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.social {
+  padding-left: 28px;
+  margin-top: 22px;
+  display: flex;
+  gap: 20px;
+}
+
+.contentBox {
+  padding-left: 28px;
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.btn {
+  padding: 5px 12px;
+  border-radius: 22px;
+  border: 1px solid #81d100;
+}
+
+.info {
+  border-top: var(--primary-border);
+  padding-left: 28px;
+  padding-top: 28px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.desc {
+  padding-left: 28px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 22px;
+
+
+}
+.desc span {
+  color: #81d100;
+}
+
+.bottomBox {
+  padding-left: 28px;
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+
+
+}
+
+.bottomBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: var(--font-family-second), sans-serif;
+  width: 151px;
+  height: 41px;
+  background-image: url('../../assets/images/card/frame.svg');
+  background-repeat: no-repeat;
+}
+
+.bottomBox span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+}
+
+.cardTop {
+  border-top: var(--primary-border);
+  border-right: var(--primary-border);
+  height: 47px;
+  position: relative;
+  left: -1px;
+}
+
+
+.videoWrapper {
+  min-width: 814px;
+  position: relative;
+  left: -1px;
+  height: 466px;
+  border: var(--primary-border);
+  border-color: #ffffff;
+  border-left: none;
+  border-top: none;
+}
+
+.video {
+  height: 500px;
+  transform: translateY(-15px);
+}
+
+
+.progress {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #484848;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  transform: translateX(-1px);
+}
+
+.progressLine {
+  background: linear-gradient(to right, #007227 0%, #81D100 50%, #FFE924 100%);
+}
+
+.triangle {
+  position: relative;
+  top: -116px;
+  left: 733px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 82px 82px 0 0; /* высота и ширина треугольника, где 82px это длина катета */
+  border-color: white transparent transparent transparent; /* цвета границ, черный для основания */
+  transform: rotate(180deg); /* поворот треугольника */
+  position: relative;
+}
+
+.triangle::before {
+  content: "";
+  position: absolute;
+  top: -82px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 80px 80px 0 0; /* на 2 пикселя меньше, чтобы перекрыть внутренний бордер */
+  border-color: var(--bg-color-primary) transparent transparent transparent; /* серый бордер */
+  transform: rotate(); /* поворот треугольника */
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  top: -81px;
+  left: 1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 78px 78px 0 0; /* на 4 пикселя меньше, чтобы оставить место для внутреннего черного треугольника */
+  border-color: var(--bg-color-primary)  transparent transparent transparent; /* черный внутренний треугольник */
+  transform: rotate(); /* поворот треугольника */
+}
+
+.fadeInSection {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.isVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media  (max-width: 890px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .content {
+    border: var(--primary-border);
+  }
+
+  .cardTop {
+    display: none;
+  }
+
+  .progress {
+    left: 1px;
+    border: none;
+    width: 385px;
+    border-left: var(--primary-border);
+    border-right: var(--primary-border);
+  }
+
+  .videoWrapper {
+    border: none;
+    transform: translate(1px, 15px);
+    width: 385px;
+    height: 216px;
+    
+  }
+
+  .video {
+    width: 385px;
+    height: 216px;
+    border-left: var(--primary-border);
+    border-right: var(--primary-border);
+  }
+}
+
+@media  (max-width: 410px) {
+
+  .top {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    height: 500px;
+  }
+
+  .bottomBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bottomBox span {
+    justify-content: start;
+  }
+
+  .progress {
+    width: 100%;
+  }
+
+  .videoWrapper {
+    width: auto;
+  }
+
+  .right {
+    position: relative;
+    width: 100%;
+  }
+
+  .video {
+    width: 380px;
+  }
+}
+
+@media  (max-width: 408px) {
+  .video {
+    width: 378px;
+  }
+}
+
+@media  (max-width: 406px) {
+  .video {
+    width: 376px;
+  }
+}
+
+@media  (max-width: 404px) {
+  .video {
+    width: 374px;
+  }
+}
+
+@media  (max-width: 402px) {
+  .video {
+    width: 372px;
+  }
+}
+
+@media  (max-width: 400px) {
+  .video {
+    width: 370px;
+  }
+}
+@media  (max-width: 398px) {
+  .video {
+    width: 368px;
+  }
+}
+
+@media  (max-width: 396px) {
+  .video {
+    width: 366px;
+  }
+}
+
+@media  (max-width: 394px) {
+  .video {
+    width: 364px;
+  }
+}
+
+@media  (max-width: 392px) {
+  .video {
+    width: 362px;
+  }
+}
+
+@media  (max-width: 390px) {
+  .video {
+    width: 360px;
+  }
+}
+
+@media  (max-width: 388px) {
+  .video {
+    width: 358px;
+  }
+}
+
+@media  (max-width: 386px) {
+  .video {
+    width: 356px;
+  }
+}
+
+@media  (max-width: 384px) {
+  .video {
+    width: 354px;
+  }
+}
+
+@media  (max-width: 382px) {
+  .video {
+    width: 352px;
+  }
+}
+
+@media  (max-width: 380px) {
+  .video {
+    width: 350px;
+  }
+}
+
+@media  (max-width: 378px) {
+  .video {
+    width: 348px;
+  }
+}
+
+@media  (max-width: 376px) {
+  .video {
+    width: 346px;
+  }
+}
+
+@media  (max-width: 374px) {
+  .video {
+    width: 344px;
+  }
+}
+
+@media  (max-width: 372px) {
+  .video {
+    width: 342px;
+  }
+}
+
+@media  (max-width: 370px) {
+  .video {
+    width: 340px;
+  }
+}
+
+@media  (max-width: 368px) {
+  .video {
+    width: 338px;
+  }
+}
+
+@media  (max-width: 366px) {
+  .video {
+    width: 336px;
+  }
+}
+
+@media  (max-width: 364px) {
+  .video {
+    width: 334px;
+  }
+}
+
+@media  (max-width: 362px) {
+  .video {
+    width: 332px;
+  }
+}
+
+@media  (max-width: 360px) {
+  .video {
+    width: 330px;
+  }
+}

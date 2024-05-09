@@ -1,0 +1,12 @@
+.teams {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 890px) {
+	.teams {
+		gap: 15px;
+		
+	}
+}

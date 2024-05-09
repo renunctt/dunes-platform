@@ -1,0 +1,19 @@
+.menu {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(30, 30, 30, 0.5);
+	backdrop-filter: blur(10px);
+	border: var(--primary-border);
+	border-bottom: none;
+}
+
+.link {
+	font-family: var(--font-family-second), sans-serif;
+	font-size: 14px;
+	padding-left: 24px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	border-bottom: var(--primary-border);
+}

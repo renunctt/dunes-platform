@@ -1,0 +1,23 @@
+.overview {
+	border-top: var(--primary-border);
+	border-bottom: var(--primary-border);
+}
+
+.overviewWrapper {
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+	padding: 43px 25px;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: 500;
+	font-family: var(--font-family-second);
+	text-transform: uppercase;
+}
+
+.overviewWrapper p {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.6);
+	margin-top: 34px;
+}

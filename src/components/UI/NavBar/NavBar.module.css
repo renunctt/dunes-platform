@@ -1,0 +1,35 @@
+.nav {
+  height: 100%;
+  display: flex;
+}
+
+.incubation, .protocol {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-right: var(--primary-border);
+}
+
+.incubation {
+  padding: 0 25px 0 50px;
+  border-left: var(--primary-border);
+}
+
+.protocol {
+  padding: 0 55px 0 66px;
+}
+
+.protocolMenu {
+	transform: translateX(-1px);
+}
+
+.menu:hover .incubation, .protocolMenu:hover .protocol {
+	background-color: rgba(30, 30, 30, 0.5);
+}
+
+@media  (max-width: 890px) {
+  .nav {
+    display: none;
+  }
+}

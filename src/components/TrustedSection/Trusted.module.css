@@ -1,0 +1,109 @@
+.trusted {
+  border-bottom: var(--primary-border);
+}
+
+.title {
+  display:flex;
+  gap: 14px;
+  font-family: var(--font-family-second), sans-serif;
+  text-transform: uppercase;
+  padding: 27px 0;
+}
+
+.trustedWrapper {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 70%;
+}
+
+.carusel {
+  margin-bottom: 58px;
+}
+
+.decor {
+  display:flex;
+  align-items: center;
+  margin-left: 43px;
+  padding-left: 33px;
+  border-left: var(--primary-border);
+}
+
+.circle {
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 109px;
+  height: 109px;
+  background-image: url(../../assets/images/icons/circle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: spin 16s linear infinite;
+}
+
+.bitcoin {
+  position: relative;
+  left: -78px;
+}
+
+.caruselImg {
+  filter: blur(4px);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 890px) {
+  .title {
+    font-size: 14px;
+    position: relative;
+    top: -60px;
+  }
+
+  .trustedWrapper {
+    height: 100px;
+  }
+
+  .content {
+    width: 95%;
+    height: 140px;
+  }
+
+  .carusel {
+    position: relative;
+    top: -50px;
+  }
+
+  .decor {
+    position: relative;
+    top: -100px;
+    left: -80px;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .circle {
+    max-width: 90px;
+    min-width: 90px;
+    max-height: 90px;
+    min-height: 90px;
+  }
+
+  .bitcoin {
+    width: 42px;
+    left: -65px;
+  }
+}

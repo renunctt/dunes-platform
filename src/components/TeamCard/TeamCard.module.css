@@ -1,0 +1,55 @@
+.card {
+	position: relative;
+	border: 1px solid white;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	padding: 22px;
+	padding-right: 28px;
+	width: 258px;
+}
+
+.arrow {
+	position: absolute;
+	width: 22px;
+	top: 0;
+	left: 234px;
+}
+
+.name {
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 19px;
+}
+
+.desc {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.6);
+	margin-top: 14px;
+}
+
+.fadeInSection {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.isVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 890px) {
+	.card {
+		white-space: nowrap; /* Предотвращает перенос текста */
+  overflow-x: hidden; /* Включает горизонтальный скролл при необходимости */
+  overflow-y: hidden;
+	}
+	.desc {
+		display: inline-block;
+		width: 200px;
+		white-space: nowrap; /* Предотвращает перенос текста */
+  overflow-x: hidden; /* Включает горизонтальный скролл при необходимости */
+  overflow-y: hidden;
+	}
+}

@@ -1,0 +1,45 @@
+.top {
+  width: 384px;
+  height: 153px;
+  border-left: var(--primary-border);
+  border-right: var(--primary-border);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  align-items: end;
+}
+
+.title {
+  width: 385px;
+  height: 60px;
+  border-top: var(--primary-border);
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title span {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.left {
+  position: relative;
+  top: 25px;
+}
+
+.right {
+  position: relative;
+  top: -25px;
+  transform: rotate(180deg);
+}
+
+@media  (max-width: 410px) {
+  .top {
+    width: 100%;
+  }
+
+  .title span {
+    font-size: 30px;
+  }
+}

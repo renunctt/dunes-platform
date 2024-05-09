@@ -1,0 +1,16 @@
+.partners {
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+	padding: 43px 25px;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: 500;
+	font-family: var(--font-family-second);
+	text-transform: uppercase;
+}
+
+.runner {
+	margin-top: 37px;
+}

@@ -1,0 +1,11 @@
+.items {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media  (max-width: 890px) {
+	.items {
+		flex-direction: column;
+		gap: 24px;
+	}
+}

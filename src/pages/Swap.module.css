@@ -109,7 +109,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-bottom: 280px;
+		margin-bottom: 60px;
 	}
 
 	.calc {
@@ -129,13 +129,13 @@
 
 	.hero1 {
 		width: 200px;
-		top: 341px;
+		top: 84px;
 		left: -57px;
 	}
 
 	.hero2 {
 		width: 200px;
-		top: 341px;
+		top: 84px;
 		right: -37px;
 	}
 

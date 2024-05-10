@@ -16,7 +16,7 @@ export const ProjectTeam = () => {
 						<img className={styles.left} src={leftIcon} alt='' />
 					</div>
 
-					<div className='[mask-image:_linear-gradient(to_right,transparent_1%,_black_128px,_black_calc(100%-0px),transparent_0%)]'>
+					<div className='[mask-image:_linear-gradient(to_right,transparent_1%,_black_100px,_black_calc(100%-0px),transparent_0%)]'>
 						<div className={styles.teamCardsMobile}>
 							<TeamCards />
 						</div>

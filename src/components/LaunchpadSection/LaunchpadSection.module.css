@@ -1,7 +1,3 @@
-.launchpad {
-	transform: translateY(-100px);
-}
-
 .top {
 	width: 384px;
 	height: 213px;
@@ -54,7 +50,6 @@
 }
 
 .launchItem {
-	transform: translateY(-100px);
 	position: relative;
 	z-index: 20;
 }
@@ -63,7 +58,7 @@
 	position: relative;
 	border: var(--primary-border);
 	border-bottom: none;
-	height: 147px;
+	height: 47px;
 	display: flex;
 	justify-content: space-between;
 	z-index: 0;

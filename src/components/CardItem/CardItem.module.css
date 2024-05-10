@@ -4,7 +4,7 @@
 
 .top {
   width: 384px;
-  height: 147px;
+  height: 47px;
   border: var(--primary-border);
   border-bottom: none;
   position: relative;
@@ -20,12 +20,10 @@
   width: 385px;
   border-right: none;
   z-index: 1;
-  transform: translateY(-100px);
 }
 
 .cardBottom {
   position: relative;
-  transform: translateY(-100px);
   z-index: 1;
 }
 
@@ -117,7 +115,7 @@
 .cardTop {
   border-top: var(--primary-border);
   border-right: var(--primary-border);
-  height: 147px;
+  height: 47px;
   position: relative;
   left: -1px;
 }

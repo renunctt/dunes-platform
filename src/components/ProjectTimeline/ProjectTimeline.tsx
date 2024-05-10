@@ -1,5 +1,5 @@
 import styles from './ProjectTimeline.module.css'
-import timelineIcon1 from '../../assets/images/icons/timeline1.svg'
+//import timelineIcon1 from '../../assets/images/icons/timeline1.svg'
 import timelineIcon2 from '../../assets/images/icons/timeline2.svg'
 import line from '../../assets/images/icons/timeline-line.svg'
 import { useEffect, useState } from 'react'

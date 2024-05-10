@@ -9,6 +9,16 @@
   justify-content: space-between;
 }
 
+.greenLineWrap {
+  position: absolute;
+}
+
+.greenLine {
+  position: relative;
+  left: 16px;
+  top: -22px;
+}
+
 .item {
   display: flex;
   align-items: center;

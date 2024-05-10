@@ -2,6 +2,10 @@ import styles from './Main.module.css'
 import bgVideo from '../../assets/videos/main-bg.mp4'
 import { useEffect, useRef } from 'react'
 
+const MyHr = () => {
+	return <div className={styles.hr}>{'\n'}</div>
+}
+
 export const Main = () => {
 	const videoRef = useRef(null)
 
@@ -28,24 +32,22 @@ export const Main = () => {
 	return (
 		<main className={styles.main}>
 			<video
-					ref={videoRef}
-					className={styles.video}
-					autoPlay
-					muted
-					loop
-					playsInline
-					src={bgVideo}
-				/>
+				ref={videoRef}
+				className={styles.video}
+				autoPlay
+				muted
+				loop
+				playsInline
+				src={bgVideo}
+			/>
 			<div className={`${styles.mainWrapper} my-container`}>
-			
-
 				<h1 className={styles.title}>
 					Join the most innovative <span>launchpad</span> of 2024
 				</h1>
 
 				<p className={styles.desc}>
-					Platform forged from Sands of ancient desert to provide incubation to
-					Innovations on Runes protocol
+					Platform forged from Sands <MyHr /> of ancient desert to provide
+					incubation <MyHr /> to Innovations on Runes protocol
 				</p>
 
 				<div className={styles.box}>

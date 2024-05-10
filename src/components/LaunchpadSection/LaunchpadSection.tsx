@@ -60,7 +60,7 @@ export const LaunchpadSection = ({ firstItems, secondItems, title }: ICardSectio
                         <div className={styles.line4}></div>
                         <div className={styles.line5}></div>
                     </div>
-                    <div>{isFinished ? firstItems : secondItems}</div>
+                    <div className={styles.itemsWrap}>{isFinished ? firstItems : secondItems}</div>
                 </div>
             </div>
         </>

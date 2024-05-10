@@ -21,11 +21,13 @@
   width: 384px;
   border-right: none;
   z-index: 1;
+  border-bottom: -100px;
 }
 
 .cardBottom {
   position: relative;
   z-index: 1;
+  border-bottom: -100px;
 }
 
 .title {

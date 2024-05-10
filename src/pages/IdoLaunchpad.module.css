@@ -1,0 +1,21 @@
+.bottom {
+	width: 1230px;
+	display: flex;
+	margin: 0 auto;
+	padding: 0 15px;
+	justify-content: space-between;
+	height: 120px;
+}
+
+.line {
+	width: 383px;
+	height: 100%;
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+}
+
+@media (max-width: 890px) {
+	.line {
+		display: none;
+	}
+}

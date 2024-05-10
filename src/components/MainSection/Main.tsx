@@ -3,7 +3,7 @@ import bgVideo from '../../assets/videos/main-bg.mp4'
 import { useEffect, useRef } from 'react'
 
 const MyHr = () => {
-	return <div className={styles.hr}>{'\n'}</div>
+	return <p className={styles.hr}>{'\n'}</p>
 }
 
 export const Main = () => {
@@ -45,10 +45,10 @@ export const Main = () => {
 					Join the most innovative <span>launchpad</span> of 2024
 				</h1>
 
-				<p className={styles.desc}>
+				<div className={styles.desc}>
 					Platform forged from Sands <MyHr /> of ancient desert to provide
 					incubation <MyHr /> to Innovations on Runes protocol
-				</p>
+				</div>
 
 				<div className={styles.box}>
 					<button className={styles.buy}>buy $DUNES</button>

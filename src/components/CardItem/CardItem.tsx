@@ -78,25 +78,25 @@ export const CardItem = () => {
 		}
 	}, [])
 
-  useEffect(() => {
-    const video = videoRef.current;
+	useEffect(() => {
+		const video = videoRef.current
 
-    const disableVideoControls = () => {
-      if (video) {
-        video.removeAttribute("controls");
-      }
-    };
+		const disableVideoControls = () => {
+			if (video) {
+				video.removeAttribute('controls')
+			}
+		}
 
-    if (video) {
-      video.addEventListener("playing", disableVideoControls);
-    }
+		if (video) {
+			video.addEventListener('playing', disableVideoControls)
+		}
 
-    return () => {
-      if (video) {
-        video.removeEventListener("playing", disableVideoControls);
-      }
-    };
-  }, []);
+		return () => {
+			if (video) {
+				video.removeEventListener('playing', disableVideoControls)
+			}
+		}
+	}, [])
 
 	return (
 		<div className={styles.card}>
@@ -158,30 +158,32 @@ export const CardItem = () => {
 
 			<div className={styles.right}>
 				<div className={styles.cardTop}></div>
-				<Section>
-					<div className={styles.progress}>
-						<div
-							className={styles.progressLine}
-							style={{
-								width: `${progress}%`,
-								height: '100%',
-								transition: isPlaying ? 'width 0.3s ease' : 'none', // Добавляем анимацию изменения ширины
-							}}
-						></div>
-					</div>
-					<div className={styles.videoWrapper}>
-						<video
-							ref={videoRef}
-							className={styles.video}
-							autoPlay
-							muted
-							loop
-							playsInline
-							src={bgVideo}
-						/>
-						<div className={styles.triangle}></div>
-					</div>
-				</Section>
+				<div className={styles.cardBottom}>
+					<Section>
+						<div className={styles.progress}>
+							<div
+								className={styles.progressLine}
+								style={{
+									width: `${progress}%`,
+									height: '100%',
+									transition: isPlaying ? 'width 0.3s ease' : 'none', // Добавляем анимацию изменения ширины
+								}}
+							></div>
+						</div>
+						<div className={styles.videoWrapper}>
+							<video
+								ref={videoRef}
+								className={styles.video}
+								autoPlay
+								muted
+								loop
+								playsInline
+								src={bgVideo}
+							/>
+							<div className={styles.triangle}></div>
+						</div>
+					</Section>
+				</div>
 			</div>
 		</div>
 	)

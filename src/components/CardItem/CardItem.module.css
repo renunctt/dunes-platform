@@ -4,18 +4,29 @@
 
 .top {
   width: 384px;
-  height: 47px;
+  height: 147px;
   border: var(--primary-border);
   border-bottom: none;
+  position: relative;
+  z-index: -1;
 }
 
 .content {
+  position: relative;
   height: 476px;
   padding-top: 28px;
   border: var(--primary-border);
   border-color: #ffffff;
   width: 385px;
   border-right: none;
+  z-index: 1;
+  transform: translateY(-100px);
+}
+
+.cardBottom {
+  position: relative;
+  transform: translateY(-100px);
+  z-index: 1;
 }
 
 .title {
@@ -45,6 +56,13 @@
   padding: 5px 12px;
   border-radius: 22px;
   border: 1px solid #81d100;
+}
+
+.right {
+  position: relative;
+  z-index: 10;
+  transform: translateX(-1px);
+  background-color: var(--bg-color-primary);
 }
 
 .info {
@@ -99,7 +117,7 @@
 .cardTop {
   border-top: var(--primary-border);
   border-right: var(--primary-border);
-  height: 47px;
+  height: 147px;
   position: relative;
   left: -1px;
 }

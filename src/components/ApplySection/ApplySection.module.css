@@ -1,3 +1,7 @@
+.apply {
+	transform: translateY(-200px);
+}
+
 .applyWrapper {
 	position: relative;
 	display: flex;

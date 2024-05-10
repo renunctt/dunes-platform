@@ -1,3 +1,7 @@
+.launchpad {
+	transform: translateY(-100px);
+}
+
 .top {
 	width: 384px;
 	height: 213px;
@@ -49,12 +53,20 @@
 	width: 190px;
 }
 
+.launchItem {
+	transform: translateY(-100px);
+	position: relative;
+	z-index: 20;
+}
+
 .topLine {
+	position: relative;
 	border: var(--primary-border);
 	border-bottom: none;
-	height: 47px;
+	height: 147px;
 	display: flex;
 	justify-content: space-between;
+	z-index: 0;
 }
 
 .line1 {

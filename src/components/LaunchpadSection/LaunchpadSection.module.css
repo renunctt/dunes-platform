@@ -1,3 +1,9 @@
+.launchpad {
+	position: relative;
+	top: -100px;
+	margin-bottom: -200px; 
+}
+
 .top {
 	width: 384px;
 	height: 213px;
@@ -52,13 +58,14 @@
 .launchItem {
 	position: relative;
 	z-index: 20;
+	top: -100px;
 }
 
 .topLine {
 	position: relative;
 	border: var(--primary-border);
 	border-bottom: none;
-	height: 47px;
+	height: 147px;
 	display: flex;
 	justify-content: space-between;
 	z-index: 0;

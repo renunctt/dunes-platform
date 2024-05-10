@@ -4,20 +4,21 @@
 
 .top {
   width: 384px;
-  height: 47px;
-  border: var(--primary-border);
+  height: 147px;
+  border: 1px solid #414141;
   border-bottom: none;
   position: relative;
   z-index: -1;
 }
 
 .content {
+  transform: translateY(-100px);
   position: relative;
   height: 476px;
   padding-top: 28px;
   border: var(--primary-border);
   border-color: #ffffff;
-  width: 385px;
+  width: 384px;
   border-right: none;
   z-index: 1;
 }
@@ -115,9 +116,22 @@
 .cardTop {
   border-top: var(--primary-border);
   border-right: var(--primary-border);
-  height: 47px;
+  height: 147px;
   position: relative;
   left: -1px;
+}
+
+.cardTopHidden {
+  border-top: var(--primary-border);
+  border-right: var(--primary-border);
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+}
+
+.cardBottom {
+  transform: translateY(-100px);
 }
 
 
@@ -213,7 +227,7 @@
   }
 
   .content {
-    border: var(--primary-border);
+    border: 1px solid #414141;
   }
 
   .cardTop {

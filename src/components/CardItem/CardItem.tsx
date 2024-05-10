@@ -102,6 +102,7 @@ export const CardItem = () => {
 		<div className={styles.card}>
 			<div className={styles.left}>
 				<div className={styles.top}></div>
+				<div className={styles.leftTopHidden}></div>
 
 				<Section>
 					<div className={styles.content}>

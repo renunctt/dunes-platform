@@ -55,7 +55,7 @@
 }
 
 .buy {
-  background-image: url(../../assets/images/frames/main-frame-green.svg);
+  background-image: url(../../assets/images/card/frame.svg);
 }
 
 .get {
@@ -64,6 +64,10 @@
 
 .hr {
   display: none;
+}
+
+.buy {
+  height: 50px;
 }
 
 @media (max-width: 890px) {
@@ -92,4 +96,6 @@
   .video {
     height: 646px;
   }
+
+  
 }

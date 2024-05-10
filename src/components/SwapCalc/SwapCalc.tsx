@@ -1,7 +1,8 @@
 import styles from './SwapCalc.module.css'
 import { cryptos } from '../../configs/cryptos-config'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import swapIcon from '../../assets/images/cryptos/swap-icon.svg'
+import Select from '../UI/Select/Select'
 
 const getCryptos = [...cryptos]
 
@@ -9,17 +10,27 @@ export const SwapCalc = () => {
 	const [selectedCrypto, setSelectedCrypto] = useState(cryptos[0])
 	const [selectedGetCrypto, setSelectedGetCrypto] = useState(getCryptos[2])
 	const [value, setValue] = useState('1')
+	const [value2, setValue2] = useState('')
 
 	const handleChange = event => {
 		const inputValue = event.target.value
 		const cleanedValue = inputValue.replace(/[^\d.]/g, '')
 		setValue(cleanedValue)
+		calc()
+	}
+
+	const handleChangeGet = event => {
+		const inputValue = event.target.value
+		const cleanedValue = inputValue.replace(/[^\d.]/g, '')
+		setValue2(cleanedValue)
+		calc2()
 	}
 
 	const handleCryptoChange = event => {
 		const selectedAbbr = event.target.value
 		const selectedCrypto = cryptos.find(crypto => crypto.abbr === selectedAbbr)
 		setSelectedCrypto(selectedCrypto)
+		calc()
 	}
 
 	const handleGetCryptoChange = event => {
@@ -28,19 +39,27 @@ export const SwapCalc = () => {
 			crypto => crypto.abbr === selectedAbbr
 		)
 		setSelectedGetCrypto(selectedCrypto)
-	}
-
-	const handleKeyDown = event => {
-		event.preventDefault()
+		calc2()
 	}
 
 	const calc = () => {
-		return parseFloat(
+		const n = parseFloat(
 			(
 				(Number(value) * Number(selectedCrypto.defaultPrice)) /
 				Number(selectedGetCrypto.defaultPrice)
 			).toFixed(7)
 		)
+		setValue2(String(n))
+	}
+
+	const calc2 = () => {
+		const n = parseFloat(
+			(
+				(Number(value2) * (Number(selectedGetCrypto.defaultPrice)) /
+				Number(selectedCrypto.defaultPrice))
+			).toFixed(7)
+		)
+		setValue(String(n))
 	}
 
 	return (
@@ -122,8 +141,8 @@ export const SwapCalc = () => {
 					<div className={styles.inputWrap}>
 						<input
 							className={styles.input}
-							value={calc()}
-							onKeyDown={handleKeyDown}
+							value={value2}
+							onChange={handleChangeGet}
 							type='text'
 							name=''
 							id=''

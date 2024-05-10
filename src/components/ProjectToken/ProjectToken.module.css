@@ -2,8 +2,11 @@
 	border-top: var(--primary-border);
 }
 
-.tokenWrapper {
+.bottom {
 	border-left: var(--primary-border);
+}
+
+.tokenWrapper {
 	border-right: var(--primary-border);
 	padding-bottom: 43px;
 	white-space: nowrap;

@@ -1,14 +1,13 @@
-.launchpad {
-	position: relative;
-	top: -100px;
-	margin-bottom: -200px; 
-}
-
 .top {
 	width: 384px;
 	height: 213px;
 	border: var(--primary-border);
 	border-bottom: none;
+}
+
+.itemsWrap {
+	transform: translateY(-100px);
+	margin-bottom: -100px;
 }
 
 .title {

@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import { Home } from './pages/Home.tsx'
 import { ProjectInfo } from './pages/ProjectInfo.tsx'
+import { Swap } from './pages/Swap.tsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: 'project-info',
         element: <ProjectInfo />
+      },
+      {
+        path: 'swap',
+        element: <Swap />
       }
     ]
   }

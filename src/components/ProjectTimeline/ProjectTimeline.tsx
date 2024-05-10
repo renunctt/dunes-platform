@@ -1,5 +1,5 @@
 import styles from './ProjectTimeline.module.css'
-import timelineIcon1 from '../../assets/images/icons/timeline1.svg'
+//import timelineIcon1 from '../../assets/images/icons/timeline1.svg'
 import timelineIcon2 from '../../assets/images/icons/timeline2.svg'
 import line from '../../assets/images/icons/timeline-line.svg'
 import { useEffect, useState } from 'react'
@@ -63,7 +63,10 @@ export const ProjectTimeline = () => {
 					<div className={styles.mobile}>
 						<div className={styles.mobileTop}>
 							<div className={styles.mobileItem}>
-								<img src={timelineIcon1} alt='' />
+								<img src={timelineIcon2} alt='' />
+								<div style={style} className={styles.greenLineWrapMobile}>
+									<img className={styles.greenLineMobile} src={line} alt='' />
+								</div>
 								<p className={styles.title}>ACTIVE</p>
 								<p className={styles.data}>Apr 29, 14:02 UTC</p>
 							</div>

@@ -23,6 +23,11 @@
   text-transform: uppercase;
 }
 
+.teamCardsMobile {
+  display: none;
+  margin-top: 33px;
+}
+
 .teamCards {
   margin-top: 33px;
 }
@@ -32,6 +37,12 @@
 }
 
 @media (max-width: 890px) {
+  .teamCards {
+    display: none;
+  }
+  .teamCardsMobile {
+    display: flex;
+  }
   .top {
     display: flex;
     justify-content: space-between;
@@ -51,7 +62,7 @@
     padding-right: 0;
   }
 
-  .teamCards {
+  .teamCardsMobile {
     padding-left: 25px;
     width: 100%;
 		text-wrap: nowrap;

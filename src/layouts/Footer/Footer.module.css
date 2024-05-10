@@ -4,7 +4,6 @@
   padding-top: 140px;
   background-color: var(--bg-color-primary);
   z-index: 10;
-  transform: translateY(-200px);
 }
 
 .footerWrapper {

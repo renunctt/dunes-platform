@@ -42,12 +42,12 @@ export const Main = () => {
 			/>
 			<div className={`${styles.mainWrapper} my-container`}>
 				<h1 className={styles.title}>
-					Join the most innovative <span>launchpad</span> of 2024
+					Join the most innovative <span>launchpad</span> <MyHr /> of 2024
 				</h1>
 
 				<div className={styles.desc}>
-					Platform forged from Sands <MyHr /> of ancient desert to provide
-					incubation <MyHr /> to Innovations on Runes protocol
+					Platform forged from Sands <MyHr /> of ancient desert to provide <MyHr />
+					incubation to Innovations <MyHr /> on Runes protocol
 				</div>
 
 				<div className={styles.box}>

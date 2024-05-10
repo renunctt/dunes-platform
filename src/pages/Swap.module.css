@@ -1,0 +1,154 @@
+.swap {
+	position: relative;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 817px;
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.title {
+	font-size: 60px;
+	font-weight: 500;
+	text-align: center;
+	margin: 55px 0 25px;
+}
+
+.title span {
+	background: linear-gradient(to right, #007227 0, #81d100 50%, #ffe924 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.calc {
+	position: relative;
+
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+}
+
+.info {
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	height: 34px;
+	border-top: var(--primary-border);
+	border-bottom: var(--primary-border);
+	margin-bottom: 64px;
+}
+
+.line {
+	width: 100%;
+	border-bottom: var(--primary-border);
+}
+
+.container2 {
+	width: 817px;
+	display: flex;
+	justify-content: center;
+	height: 122px;
+	margin: 0 auto;
+	padding: 0 15px;
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+}
+
+.containerLine {
+	width: 587px;
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+}
+
+
+.hero1, .hero2 {
+	position: absolute;
+}
+
+.hero1 {
+	top: 550px;
+	left: -210px;
+	z-index: -1;
+}
+
+.hero2  {
+	top: 108px;
+	right: -210px;
+	z-index: -1;
+}
+
+.line2 {
+	position: absolute;
+	top: 34px;
+	left: 50%;
+	width: 1px;
+	height: 280px;
+	background-color: rgba(255, 255, 255, 0.25);
+	display: none;
+}
+
+@media (max-width: 890px) {
+	.container {
+		border: none;
+		padding: 0;
+	}
+
+	.title {
+		font-size: 42px;
+		padding: 0 15px;
+	}
+
+	.info {
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 280px;
+	}
+
+	.calc {
+		border: none;
+		width: 100%;
+	}
+
+	.line2 {
+		display: block;
+	}
+
+	.calcWrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.hero1 {
+		width: 200px;
+		top: 341px;
+		left: -57px;
+	}
+
+	.hero2 {
+		width: 200px;
+		top: 341px;
+		right: -37px;
+	}
+
+	.calcWrap {
+		padding: 0 15px;
+	}
+
+	.line {
+		display: none;
+	}
+
+	.container2 {
+		width: 100%;
+		padding: 0 15px;
+	}
+}

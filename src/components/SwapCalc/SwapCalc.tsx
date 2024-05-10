@@ -1,8 +1,7 @@
 import styles from './SwapCalc.module.css'
 import { cryptos } from '../../configs/cryptos-config'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import swapIcon from '../../assets/images/cryptos/swap-icon.svg'
-import Select from '../UI/Select/Select'
 
 const getCryptos = [...cryptos]
 

@@ -55,11 +55,19 @@
 }
 
 .buy {
-  background-image: url(../../assets/images/frames/main-frame-green.svg);
+  background-image: url(../../assets/images/card/frame.svg);
 }
 
 .get {
   background-image: url(../../assets/images/frames/main-frame-gray.svg);
+}
+
+.hr {
+  display: none;
+}
+
+.buy {
+  height: 50px;
 }
 
 @media (max-width: 890px) {
@@ -71,9 +79,13 @@
     line-height: 1.1;
   }
 
+  .hr {
+    display: block;
+  }
+
   .desc {
     font-size: 16px;
-    width: 70%;
+    width: 60%;
   }
 
   .box {
@@ -84,4 +96,6 @@
   .video {
     height: 646px;
   }
+
+  
 }

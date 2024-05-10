@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export const Logo = () => {
   return (
-    <Link className={styles.logo} to="/dunes-platform">
+    <Link className={styles.logo} to="/">
       <img src={logo} alt="Logo" />
     </Link>
   )

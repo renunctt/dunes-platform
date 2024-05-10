@@ -4,18 +4,28 @@
 
 .top {
   width: 384px;
-  height: 47px;
-  border: var(--primary-border);
+  height: 147px;
+  border: 1px solid #414141;
   border-bottom: none;
+  position: relative;
+  z-index: -1;
 }
 
 .content {
+  transform: translateY(-100px);
+  position: relative;
   height: 476px;
   padding-top: 28px;
   border: var(--primary-border);
   border-color: #ffffff;
-  width: 385px;
+  width: 384px;
   border-right: none;
+  z-index: 1;
+}
+
+.cardBottom {
+  position: relative;
+  z-index: 1;
 }
 
 .title {
@@ -45,6 +55,13 @@
   padding: 5px 12px;
   border-radius: 22px;
   border: 1px solid #81d100;
+}
+
+.right {
+  position: relative;
+  z-index: 10;
+  transform: translateX(-1px);
+  background-color: var(--bg-color-primary);
 }
 
 .info {
@@ -99,33 +116,47 @@
 .cardTop {
   border-top: var(--primary-border);
   border-right: var(--primary-border);
-  height: 47px;
+  height: 147px;
   position: relative;
   left: -1px;
+}
+
+.cardTopHidden {
+  border-top: var(--primary-border);
+  border-right: var(--primary-border);
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+}
+
+.cardBottom {
+  transform: translateY(-100px);
 }
 
 
 .videoWrapper {
-  min-width: 814px;
+  min-width: 830px;
   position: relative;
   left: -1px;
-  height: 466px;
+  height: 463px;
   border: var(--primary-border);
   border-color: #ffffff;
   border-left: none;
   border-top: none;
+  object-fit: cover;
 }
 
 .video {
-  height: 500px;
-  transform: translateY(-15px);
+  height: 548px;
+  transform: translateY(-45px);
 }
 
 
 .progress {
   position: relative;
   width: 100%;
-  height: 10px;
+  height: 13px;
   background-color: #484848;
   border-top: 1px solid white;
   border-right: 1px solid white;
@@ -138,8 +169,8 @@
 
 .triangle {
   position: relative;
-  top: -116px;
-  left: 733px;
+  top: -167px;
+  left: 748px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -187,12 +218,16 @@
 }
 
 @media  (max-width: 890px) {
+  .right {
+    background-color: inherit;
+  }
+
   .card {
     flex-direction: column;
   }
 
   .content {
-    border: var(--primary-border);
+    border: 1px solid #414141;
   }
 
   .cardTop {
@@ -203,6 +238,7 @@
     left: 1px;
     border: none;
     width: 385px;
+    height: 8px;
     border-left: var(--primary-border);
     border-right: var(--primary-border);
   }
@@ -220,6 +256,7 @@
     height: 216px;
     border-left: var(--primary-border);
     border-right: var(--primary-border);
+    transform: translateY(-15px);
   }
 }
 
@@ -250,6 +287,7 @@
 
   .videoWrapper {
     width: auto;
+    height: 212px;
   }
 
   .right {
@@ -259,6 +297,7 @@
 
   .video {
     width: 380px;
+    height: 212px;
   }
 }
 
@@ -271,6 +310,11 @@
 @media  (max-width: 406px) {
   .video {
     width: 376px;
+    height: 210px;
+  }
+
+  .videoWrapper {
+    height: 210px;
   }
 }
 
@@ -283,6 +327,11 @@
 @media  (max-width: 402px) {
   .video {
     width: 372px;
+    height: 208px;
+  }
+
+  .videoWrapper {
+    height: 208px;
   }
 }
 
@@ -294,90 +343,165 @@
 @media  (max-width: 398px) {
   .video {
     width: 368px;
+    height: 206px;
+  }
+
+  .videoWrapper {
+    height: 206px;
   }
 }
 
 @media  (max-width: 396px) {
   .video {
     width: 366px;
+    height: 205px;
+  }
+
+  .videoWrapper {
+    height: 205px;
   }
 }
 
 @media  (max-width: 394px) {
   .video {
     width: 364px;
+    height: 204px;
+  }
+
+  .videoWrapper {
+    height: 204px;
   }
 }
 
 @media  (max-width: 392px) {
   .video {
     width: 362px;
+    height: 203px;
+  }
+
+  .videoWrapper {
+    height: 203px;
   }
 }
 
 @media  (max-width: 390px) {
   .video {
     width: 360px;
+    height: 202px;
+  }
+
+  .videoWrapper {
+    height: 202px;
   }
 }
 
 @media  (max-width: 388px) {
   .video {
     width: 358px;
+    height: 201px;
+  }
+
+  .videoWrapper {
+    height: 201px;
   }
 }
 
 @media  (max-width: 386px) {
   .video {
     width: 356px;
+    height: 199px;
+  }
+
+  .videoWrapper {
+    height: 199px;
   }
 }
 
 @media  (max-width: 384px) {
   .video {
     width: 354px;
+    height: 198px;
+  }
+
+  .videoWrapper {
+    height: 198px;
   }
 }
 
 @media  (max-width: 382px) {
   .video {
     width: 352px;
+    height: 197px;
+  }
+
+  .videoWrapper {
+    height: 197px;
   }
 }
 
 @media  (max-width: 380px) {
   .video {
     width: 350px;
+    height: 196px;
+  }
+
+  .videoWrapper {
+    height: 196px;
   }
 }
 
 @media  (max-width: 378px) {
   .video {
     width: 348px;
+    height: 194px;
+  }
+
+  .videoWrapper {
+    height: 194px;
   }
 }
 
 @media  (max-width: 376px) {
   .video {
     width: 346px;
+    height: 193px;
+  }
+
+  .videoWrapper {
+    height: 193px;
   }
 }
 
 @media  (max-width: 374px) {
   .video {
     width: 344px;
+    height: 192px;
+  }
+
+  .videoWrapper {
+    height: 192px;
   }
 }
 
 @media  (max-width: 372px) {
   .video {
     width: 342px;
+    height: 191px;
+  }
+
+  .videoWrapper {
+    height: 191px;
   }
 }
 
 @media  (max-width: 370px) {
   .video {
     width: 340px;
+    height: 189px;
+  }
+
+  .videoWrapper {
+    height: 189px;
   }
 }
 
@@ -390,23 +514,43 @@
 @media  (max-width: 366px) {
   .video {
     width: 336px;
+    height: 188px;
+  }
+
+  .videoWrapper {
+    height: 188px;
   }
 }
 
 @media  (max-width: 364px) {
   .video {
     width: 334px;
+    height: 186px;
+  }
+
+  .videoWrapper {
+    height: 186px;
   }
 }
 
 @media  (max-width: 362px) {
   .video {
     width: 332px;
+    height: 184px;
+  }
+
+  .videoWrapper {
+    height: 184px;
   }
 }
 
 @media  (max-width: 360px) {
   .video {
     width: 330px;
+    height: 182px;
+  }
+
+  .videoWrapper {
+    height: 182px;
   }
 }

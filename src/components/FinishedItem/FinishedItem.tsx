@@ -3,17 +3,7 @@ import styles from './FinishedItem.module.css'
 import tetherIcon from '../../assets/images/icons/tether.svg'
 import { useInView } from 'framer-motion'
 import { Link } from 'react-router-dom'
-
-export interface FinishedItemProps {
-  img: string
-  icon: string
-  title: string
-  price: string
-  roi: number
-  socials: { icon: string; link: string; alt: string }[]
-  margin: string
-}
-
+import { ItemProps } from '../../constants/propsConstants'
 interface SectionProps {
   children: React.ReactNode;
   margin: string;
@@ -44,7 +34,7 @@ const Section: FC<SectionProps>  = ({ children, margin }) => {
   )
 }
 
-export const FinishedItem: FC<FinishedItemProps> = (item) => {
+export const FinishedItem: FC<ItemProps> = (item) => {
   return (
     <Section margin={item.margin}>
       <div className={styles.item}>

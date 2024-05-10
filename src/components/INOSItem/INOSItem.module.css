@@ -1,0 +1,148 @@
+.item {
+    width: 383px;
+    border: 1px solid white;
+}
+
+.top {
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--primary-border);
+}
+
+.img {
+    position: absolute;
+    width: 381px;
+}
+
+.icon {
+    position: relative;
+}
+
+.title {
+    font-size: 32px;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--primary-border);
+}
+
+.desc {
+    display: flex;
+    font-size: 12px;
+    height: 59px;
+    border-bottom: var(--primary-border);
+}
+
+.desc div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descRaised {
+    width: 192px;
+    border-right: var(--primary-border);
+}
+
+.descRoi {
+    width: 190px;
+}
+
+.infoItem {
+    font-size: 20px;
+    display: flex;
+    height: 84px;
+    border-bottom: var(--primary-border);
+}
+
+.infoItem div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    width: 192px;
+    border-right: var(--primary-border);
+    gap: 8px;
+}
+
+.items {
+    width: 190px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 31px;
+    height: 74px;
+    border-bottom: var(--primary-border);
+}
+
+.socialIcon {
+    width: 27px;
+}
+
+.detail {
+    font-weight: var(--font-family-second);
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.fadeInSection {
+    opacity: 0;
+    transform: translateY(100px);
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.isVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 410px) {
+    .item {
+        width: 287px;
+    }
+
+    .top {
+        width: 100%;
+        overflow: hidden;
+        height: 307px;
+        height: 240px;
+    }
+    .section {
+        display: flex;
+        justify-content: center;
+        border-top: var(--primary-border);
+        border-bottom: var(--primary-border);
+    }
+
+    .img {
+        width: 285px;
+        height: 240px;
+        height: auto;
+        object-fit: cover;
+        background-size: contain;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .icon {
+        width: 30%;
+    }
+}

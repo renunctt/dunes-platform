@@ -18,6 +18,6 @@ export const incubationItems: IDropdownItems[] = [
 
 export const protocolItems: IDropdownItems[] = [
   { text: 'IDO Launchpad', link: '/ido-launchpad', icon: launchpadIcon },
-  { text: 'INO Launchpad', link: '/ino-launchpad', icon: launchpadIcon },
+  { text: 'INO Launchpad', link: '/dunes-platform/ino-launchpad', icon: launchpadIcon },
   { text: 'Staking', link: '/staking', icon: stakingIcon }
 ]

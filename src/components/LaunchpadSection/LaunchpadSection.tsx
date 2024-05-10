@@ -9,7 +9,7 @@ export const LaunchpadSection = () => {
   const [isFinished, setFinished] = useState(true)
 
   return (
-    <>
+    <div className={styles.launchpad}>
       <div className="my-container">
         <div className={styles.top}>
           <h2 className={styles.title}>
@@ -52,6 +52,6 @@ export const LaunchpadSection = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }

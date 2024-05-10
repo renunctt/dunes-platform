@@ -5,7 +5,6 @@ import { FledAnimation } from '../FledAnimation/FledAnimation'
 import bgImage from '../../assets/images/launch-hero.png'
 import totemImage from '../../assets/images/totem.png'
 import { useEffect, useState } from 'react'
-import greenSpr from '../../assets/images/green-spr.png'
 
 export const ApplySection = () => {
 	const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })

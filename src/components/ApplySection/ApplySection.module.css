@@ -1,3 +1,6 @@
+.apply {
+	position: relative;
+}
 
 .applyWrapper {
 	position: relative;
@@ -102,14 +105,27 @@
 	border-right: var(--primary-border);
 }
 
-.bgHero {
+.bgHeroWrap {
 	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+.bgHero {
+	position: relative;
+	z-index: -1;
+}
+
+.greenSpr {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	z-index: -1;
 }
 
 .bgHero img {
-	width: 1300px;
-	height: 976px;
+	min-width: 100%;
 }
 
 .totem {
@@ -194,15 +210,6 @@
 
 	.right {
 		display: none;
-	}
-
-	.bgHero {
-		min-width: 600px;
-		transform: translateX(-100px);
-	}
-
-	.bgHero img {
-		height: 613px;
 	}
 
 	.totem {

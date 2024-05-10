@@ -56,41 +56,43 @@ const InoLaunchpadSection = () => {
                     <div className={styles.box}>
                         <button
                             style={{
-                                color: !isFinished ? "white" : "",
+                                color: isFinished ? "white" : "",
                             }}
-                            onClick={() => setFinished(false)}
+                            onClick={() => setFinished(true)}
                             className={`${styles.upcoming} shuffle-hover-inside`}
                         >
                             Live & Upcoming
                         </button>
                         <button
                             style={{
-                                color: isFinished ? "white" : "",
+                                color: !isFinished ? "white" : "",
                             }}
-                            onClick={() => setFinished(true)}
+                            onClick={() => setFinished(false)}
                             className={`${styles.finished} shuffle-hover-inside`}
                         >
                             <p className="shuffle-hover-inside">Finished</p>
                         </button>
                     </div>
                 </div>
-                <div className={styles.right}>
-                    <div className={styles.pageWrapper}>
-                        <button
-                            className={styles.rightButton}
-                            onClick={handleNext}
-                        >
-                            <img src={LeftArrow} alt="" />
-                        </button>
-                        <div className={styles.page}>{page}/4</div>
-                        <button
-                            className={styles.rightButton}
-                            onClick={handlePrev}
-                        >
-                            <img src={RightArrow} alt="" />
-                        </button>
+                {!isFinished && (
+                    <div className={styles.right}>
+                        <div className={styles.pageWrapper}>
+                            <button
+                                className={styles.rightButton}
+                                onClick={handleNext}
+                            >
+                                <img src={LeftArrow} alt="" />
+                            </button>
+                            <div className={styles.page}>{page}/4</div>
+                            <button
+                                className={styles.rightButton}
+                                onClick={handlePrev}
+                            >
+                                <img src={RightArrow} alt="" />
+                            </button>
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
             <div className={styles.topLine}>
                 <div className={styles.line1}></div>
@@ -101,6 +103,8 @@ const InoLaunchpadSection = () => {
             </div>
             <div className={styles.items}>
                 {isFinished ? (
+                    <UpcomingItems items={upcomingItems} />
+                ) : (
                     <>
                         {inosItem
                             .slice(itemIndex, itemIndex + 3)
@@ -108,8 +112,6 @@ const InoLaunchpadSection = () => {
                                 return <INOSItem {...item} key={item.title} />;
                             })}
                     </>
-                ) : (
-                    <UpcomingItems items={upcomingItems} />
                 )}
             </div>
         </section>

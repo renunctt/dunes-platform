@@ -5,11 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import { Home } from './pages/Home.tsx'
 import { ProjectInfo } from './pages/ProjectInfo.tsx'
-<<<<<<< HEAD
 import InoLaunchpad from './pages/InoLaunchpad.tsx'
-=======
 import { Swap } from './pages/Swap.tsx'
->>>>>>> origin/main
 
 const router = createBrowserRouter([
   {
@@ -25,14 +22,11 @@ const router = createBrowserRouter([
         element: <ProjectInfo />
       },
       {
-<<<<<<< HEAD
-        path: 'ino-launchpad',
-        element: <InoLaunchpad />
-=======
         path: 'swap',
         element: <Swap />
->>>>>>> origin/main
-      }
+      },
+      {        path: 'ino-launchpad',
+      element: <InoLaunchpad />}
     ]
   }
 ])

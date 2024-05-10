@@ -95,6 +95,10 @@
         flex-direction: column;
         gap: 24px;
     }
+    
+.right{
+    height: 120px;
+}
 }
 
 .topLine {

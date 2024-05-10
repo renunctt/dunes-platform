@@ -206,6 +206,10 @@
 }
 
 @media  (max-width: 890px) {
+  .right {
+    background-color: inherit;
+  }
+
   .card {
     flex-direction: column;
   }

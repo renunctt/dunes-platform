@@ -18,6 +18,16 @@
   left: 16px;
   top: -22px;
 }
+.greenLineWrapMobile {
+  position: absolute;
+}
+
+.greenLineMobile {
+  max-width: 10px;
+  position: relative;
+  left: 10px;
+  top: -26px;
+}
 
 .item {
   display: flex;

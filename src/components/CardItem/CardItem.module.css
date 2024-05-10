@@ -106,26 +106,27 @@
 
 
 .videoWrapper {
-  min-width: 814px;
+  min-width: 830px;
   position: relative;
   left: -1px;
-  height: 466px;
+  height: 463px;
   border: var(--primary-border);
   border-color: #ffffff;
   border-left: none;
   border-top: none;
+  object-fit: cover;
 }
 
 .video {
-  height: 500px;
-  transform: translateY(-15px);
+  height: 548px;
+  transform: translateY(-45px);
 }
 
 
 .progress {
   position: relative;
   width: 100%;
-  height: 10px;
+  height: 13px;
   background-color: #484848;
   border-top: 1px solid white;
   border-right: 1px solid white;
@@ -138,8 +139,8 @@
 
 .triangle {
   position: relative;
-  top: -116px;
-  left: 733px;
+  top: -167px;
+  left: 748px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -203,6 +204,7 @@
     left: 1px;
     border: none;
     width: 385px;
+    height: 8px;
     border-left: var(--primary-border);
     border-right: var(--primary-border);
   }
@@ -220,6 +222,7 @@
     height: 216px;
     border-left: var(--primary-border);
     border-right: var(--primary-border);
+    transform: translateY(-15px);
   }
 }
 

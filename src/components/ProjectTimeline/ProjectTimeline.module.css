@@ -1,82 +1,82 @@
 .timeline {
-  padding: 46px 0;
-  border-bottom: var(--primary-border);
+	padding: 46px 0;
+	border-bottom: var(--primary-border);
 }
 
 .timelineWrapper {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
 }
 
 .greenLineWrap {
-  position: absolute;
+	position: absolute;
 }
 
 .greenLine {
-  position: relative;
-  left: 16px;
-  top: -22px;
+	position: relative;
+	left: 16px;
+	top: -22px;
 }
 .greenLineWrapMobile {
-  position: absolute;
+	position: absolute;
 }
 
 .greenLineMobile {
-  max-width: 10px;
-  position: relative;
-  left: 10px;
-  top: -26px;
+	max-width: 10px;
+	position: relative;
+	left: 10px;
+	top: -26px;
 }
 
 .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .title {
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 14px;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 14px;
 }
 
 .data {
-  font-size: 14px;
-  opacity: 0.5;
-  margin-top: 6px;
-  text-align: center;
+	font-size: 14px;
+	opacity: 0.5;
+	margin-top: 6px;
+	text-align: center;
 }
 
 .line {
-  width: 100px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.25);
-  margin-top: 30px;
+	width: 100px;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.25);
+	margin-top: 30px;
 }
 
 .mobile {
-  width: 100%;
-  display: none;
+	width: 100%;
+	display: none;
 }
 
 .mobileItem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .mobileTop {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 0 20px;
 }
 
 .mobileItem img {
-  width: 42px;
+	width: 42px;
 }
 
 .mobileBottom {
@@ -97,36 +97,46 @@
 }
 
 @media (max-width: 890px) {
-  .mobile {
-    display: flex;
-    flex-direction: column;
-  }
+	.greenLineMobile {
+		left: 10px;
+		top: -19px;
+	}
+	.mobile {
+		display: flex;
+		flex-direction: column;
+	}
 
-  .timeline {
-    padding: 0;
-  }
+	.timeline {
+		padding: 0;
+	}
 
-  .item {
-    display: none;
-  }
+	.item {
+		display: none;
+	}
 
-  .line {
-    display: none;
-  }
+	.line {
+		display: none;
+	}
 
-  .timelineWrapper {
-    display: flex;
-    flex-direction: column;
-    border-left: var(--primary-border);
-    border-right: var(--primary-border);
-    padding: 30px 0 24px;
-  }
+	.timelineWrapper {
+		display: flex;
+		flex-direction: column;
+		border-left: var(--primary-border);
+		border-right: var(--primary-border);
+		padding: 30px 0 24px;
+	}
 
-  .title {
-    font-size: 10px;
-  }
+	.title {
+		font-size: 10px;
+	}
 
-  .data {
-    font-size: 10px;
-  }
+	.data {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 450px) {
+	.greenLineMobile {
+		top: -26px;
+	}
 }

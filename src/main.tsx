@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import { Home } from './pages/Home.tsx'
 import { ProjectInfo } from './pages/ProjectInfo.tsx'
+import InoLaunchpad from './pages/InoLaunchpad.tsx'
 import { Swap } from './pages/Swap.tsx'
 
 const router = createBrowserRouter([
@@ -23,7 +24,9 @@ const router = createBrowserRouter([
       {
         path: 'swap',
         element: <Swap />
-      }
+      },
+      {        path: 'ino-launchpad',
+      element: <InoLaunchpad />}
     ]
   }
 ])

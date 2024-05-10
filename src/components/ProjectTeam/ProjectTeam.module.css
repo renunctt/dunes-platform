@@ -35,12 +35,14 @@
   .top {
     display: flex;
     justify-content: space-between;
+    padding-left: 25px;
   }
   .left {
     display: block;
     padding-right: 30px;
   }
   .teamWrapper {
+    padding-left: 0;
     border-right: none;
     padding-right: 0;
   }
@@ -50,6 +52,7 @@
   }
 
   .teamCards {
+    padding-left: 25px;
     width: 100%;
 		text-wrap: nowrap;
     white-space: nowrap;

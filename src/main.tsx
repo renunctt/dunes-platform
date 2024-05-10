@@ -8,7 +8,7 @@ import { ProjectInfo } from './pages/ProjectInfo.tsx'
 
 const router = createBrowserRouter([
   {
-    path: '/dunes-platform',
+    path: '/',
     element: <App />,
     children: [
       {

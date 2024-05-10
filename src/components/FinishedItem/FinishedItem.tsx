@@ -83,7 +83,7 @@ export const FinishedItem: FC<FinishedItemProps> = (item) => {
           })}
         </div>
 
-        <Link to={'/dunes-platform/project-info'} className={styles.detail}>MORE DETAILS</Link>
+        <Link to={'/project-info'} className={styles.detail}>MORE DETAILS</Link>
       </div>
     </Section>
   )

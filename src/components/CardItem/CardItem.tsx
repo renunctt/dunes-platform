@@ -141,7 +141,7 @@ export const CardItem = () => {
 
 						<div className={styles.bottomBox}>
 							<Link
-								to={'/dunes-platform/project-info'}
+								to={'/project-info'}
 								className={`${styles.bottomBtn} shuffle-hover-inside`}
 							>
 								PARTICIPATE NOW

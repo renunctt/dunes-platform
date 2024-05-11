@@ -1,0 +1,148 @@
+.item {
+    width: 254px;
+    border: 1px solid white;
+}
+
+.top {
+    height: 212px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--primary-border);
+}
+
+.img {
+    position: absolute;
+    width: 252px;
+}
+
+.title {
+    font-size: 21px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--primary-border);
+}
+
+.desc {
+    display: flex;
+    font-size: 8px;
+    height: 32px;
+    color: var(--secondary-color);
+    border-bottom: var(--primary-border);
+}
+
+.desc div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descPrice {
+    width: 192px;
+    border-right: var(--primary-border);
+}
+
+.descItems {
+    width: 190px;
+}
+
+.infoItem {
+    font-size: 13px;
+    display: flex;
+    height: 55px;
+    border-bottom: var(--primary-border);
+}
+
+.infoItem div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    width: 192px;
+    border-right: var(--primary-border);
+    gap: 8px;
+}
+
+.items {
+    width: 190px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 31px;
+    height: 74px;
+    border-bottom: var(--primary-border);
+}
+
+.socialIcon {
+    width: 27px;
+}
+
+.detail {
+    font-family: var(--font-family-second);
+    font-size: 10px;
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.fadeInSection {
+    opacity: 0;
+    transform: translateY(100px);
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.isVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 410px) {
+    .item {
+        width: 287px;
+    }
+
+    .top {
+        width: 100%;
+        overflow: hidden;
+        height: 307px;
+        height: 240px;
+    }
+    .section {
+        display: flex;
+        justify-content: center;
+        border-top: var(--primary-border);
+        border-bottom: var(--primary-border);
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .img {
+        width: 285px;
+        height: 240px;
+        height: auto;
+        object-fit: cover;
+        background-size: contain;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .icon {
+        width: 30%;
+    }
+}

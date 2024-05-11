@@ -25,7 +25,7 @@ const GalleryMain = ({ isActive }: IGalleryMain) => {
                           <div
                             className={styles.lines}
                             style={{
-                              top: `${((index + 1) / 4) * 385 + ((index - 3) * 58) / 4}px`,
+                              top: `${((index + 1) / 4) * 390 + ((index - 3) * 58) / 4}px`,
                             }}
                           >
                             <div className={styles.line} />

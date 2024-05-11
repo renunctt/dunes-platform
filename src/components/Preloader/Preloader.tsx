@@ -9,7 +9,7 @@ const Preloader = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setVisible(false);
-        }, 2000);
+        }, 100000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -65,7 +65,8 @@ const Preloader = () => {
                 ></motion.span>
                 <motion.div
                     animate={{
-                        filter: 'drop-shadow(0 0 30px rgba(255, 255, 255, 0.7)) brightness(1.5)'
+                        filter: 'drop-shadow(0 0 30px rgba(255, 255, 255, 0.7)) brightness(1.5)',
+						opacity: [0.8, 1],
                     }}
                     transition={{
                         duration: 1,

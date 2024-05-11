@@ -22,6 +22,9 @@
 .button {
     width: 185px;
     height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: var(--font-size-base);
     text-transform: uppercase;
     background-size: cover;

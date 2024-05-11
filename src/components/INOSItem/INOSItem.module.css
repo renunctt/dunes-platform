@@ -33,6 +33,7 @@
     display: flex;
     font-size: 12px;
     height: 59px;
+    color: var(--secondary-color);
     border-bottom: var(--primary-border);
 }
 
@@ -47,7 +48,7 @@
     border-right: var(--primary-border);
 }
 
-.descRoi {
+.descItems {
     width: 190px;
 }
 
@@ -120,7 +121,6 @@
     .top {
         width: 100%;
         overflow: hidden;
-        height: 307px;
         height: 240px;
     }
     .section {
@@ -140,9 +140,28 @@
 
     .title {
         font-size: 24px;
+        height: 47px;
+    }
+    .desc {
+        height: 32px;
     }
 
     .icon {
         width: 30%;
+    }
+
+    .infoItem {
+        font-size: 15px;
+        height: 63px;
+    }
+
+    .descRaised,
+    .descItems {
+        font-size: 9px;
+    }
+
+    .detail {
+        font-size: 11px;
+        height: 48px;
     }
 }

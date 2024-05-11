@@ -1,4 +1,4 @@
-import GalleryMian from "@/components/GallerySections/GalleryMain/GalleryMain";
+import GalleryMain from "@/components/GallerySections/GalleryMain/GalleryMain";
 import GalleryTop from "@/components/GallerySections/GalleryTop/GalleryTop";
 import styles from "./Gallery.module.css"
 
@@ -10,7 +10,7 @@ const Gallery = () => {
     return (
         <>
             <GalleryTop isActive={isActive} setActive={setActive} />
-            <GalleryMian isActive={isActive} />
+            <GalleryMain isActive={isActive} />
             <div className={styles.line} />
         </>
     );

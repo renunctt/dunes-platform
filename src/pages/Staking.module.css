@@ -1,0 +1,249 @@
+.container {
+    max-width: 1230px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding: 70px 15px;
+}
+
+.leftWrapper {
+    width: 50%;
+    position: relative;
+}
+
+.title {
+    max-width: 560px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+}
+.title span {
+    background: linear-gradient(to right, #007227, #81d100, #ffe924);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.leftButton {
+    margin-top: 46px;
+    width: 183px;
+    height: 47px;
+    font-size: var(--font-size-base);
+    text-transform: uppercase;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    background-image: url(../assets/images/frames/main-frame-green.svg);
+}
+
+.warningWrapper {
+    margin-top: 95px;
+    max-width: 460px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.bgImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+}
+
+.rightWrapper {
+    width: 596px;
+    height: 531px;
+}
+
+.wrapper {
+    display: flex;
+    border-left: 1px solid white;
+}
+.text {
+    width: 100%;
+    height: 58px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-family: var(--font-family-base);
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #81d100;
+}
+
+.middleInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+.infoText {
+    padding: 0 61px 0 49px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--secondary-color);
+    line-height: 16px;
+    font-size: 14px;
+}
+.infoText div {
+    color: var(--primary-color);
+}
+.infoText div span {
+    color: #81d100;
+}
+.middleInfoText {
+    border-top: var(--primary-border);
+    border-bottom: var(--primary-border);
+}
+
+.enterWrapper {
+    display: flex;
+}
+.enterWrapper input {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 65px;
+    outline: none;
+    padding: 24px 47px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    border-left: 1px solid white;
+}
+.enterButton {
+    width: 198px;
+    height: 65px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-family-base);
+    font-size: 16px;
+    line-height: 19;
+    font-weight: 600;
+    color: #81d100;
+}
+
+.bottomInfoWrapper {
+    display: flex;
+    border: 1px solid white;
+}
+.bottomInfoItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topInfoText,
+.bottomInfoText {
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    width: 100%;
+
+    border: var(--primary-border);
+}
+.bottomInfoText {
+    color: var(--secondary-color);
+}
+
+.rightButton {
+    width: 100%;
+    height: 58px;
+    background: linear-gradient(to right, #007227, #81d100);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600px;
+    line-height: 19px;
+    border: 1px solid white;
+    border-top: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        padding: 32px 0 0;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 42px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .leftWrapper {
+        width: 100%;
+        border-bottom: var(--primary-border);
+        padding: 0 16px 61px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .warningWrapper {
+        margin-top: 228px;
+        width: 100%;
+        font-size: 12px;
+        padding: 0 25px;
+    }
+
+    .bgImage {
+        bottom: 60px;
+    }
+
+    .rightWrapper {
+        padding: 0 15px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .right {
+        padding: 82px 0 124px;
+        border-left: var(--primary-border);
+        border-right: var(--primary-border);
+    }
+
+    .text,
+    .enterButton {
+        font-size: 12px;
+    }
+
+    .enterWrapper input {
+        font-size: 10px;
+        padding: 20px 28px;
+    }
+
+    .topInfoText,
+    .bottomInfoText,
+    .infoText {
+        font-size: 10px;
+    }
+}

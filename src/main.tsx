@@ -9,6 +9,7 @@ import InoLaunchpad from "./pages/InoLaunchpad.tsx";
 import { Swap } from "./pages/Swap.tsx";
 import IdoLaunchpad from "./pages/IdoLaunchpad.tsx";
 import Gallery from "./pages/Gallery.tsx";
+import Staking from "./pages/Staking.tsx";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
 			{
                 path: "gallery",
                 element: <Gallery />,
+            },
+            {
+                path: "staking",
+                element: <Staking />,
             },
         ],
     },

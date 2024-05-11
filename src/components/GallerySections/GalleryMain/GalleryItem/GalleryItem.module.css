@@ -18,7 +18,7 @@
 
 .title {
     font-size: 21px;
-    height: 42px;
+    height: 47px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +118,6 @@
     .top {
         width: 100%;
         overflow: hidden;
-        height: 307px;
         height: 240px;
     }
     .section {
@@ -144,5 +143,19 @@
 
     .icon {
         width: 30%;
+    }
+
+    .infoItem {
+        font-size: 15px;
+        height: 63px;
+    } 
+
+    .descPrice, .descItems {
+        font-size: 9px;
+    }
+
+    .detail {
+        font-size: 11px;
+        height: 48px;
     }
 }

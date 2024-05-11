@@ -1,6 +1,7 @@
 import styles from "./GalleryMain.module.css";
 import { inosItem } from "@/constants/LounchpadConstants";
 import GalleryItem from "./GalleryItem/GalleryItem";
+import { Link } from "react-router-dom";
 
 interface IGalleryMain {
   isActive: string;
@@ -39,7 +40,7 @@ const GalleryMain = ({ isActive }: IGalleryMain) => {
         </div>
       </div>
       <div className={styles.buttonWrapper}>
-        <button className={styles.button}>View more</button>
+        <Link to={'/project-info'} className={styles.button}>View more</Link>
       </div>
     </>
   );

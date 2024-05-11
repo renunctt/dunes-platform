@@ -50,7 +50,7 @@ const INOSItem = (item:inosItemProps) => {
                 <div className={styles.info}>
                     <div className={styles.desc}>
                         <div className={styles.descRaised}>TOTAL RAISED</div>
-                        <div className={styles.descRoi}>ATH ROI</div>
+                        <div className={styles.descItems}>ITEMS</div>
                     </div>
 
                     <div className={styles.infoItem}>
@@ -63,7 +63,7 @@ const INOSItem = (item:inosItemProps) => {
                 </div>
 
                 <Link
-                    to={"/dunes-platform/project-info"}
+                    to={"/project-info"}
                     className={styles.detail}
                 >
                     MORE DETAILS

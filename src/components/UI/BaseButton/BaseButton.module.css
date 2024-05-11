@@ -1,9 +1,6 @@
 .baseBtn {
-	width: 151px;
-  height: 40px;
 	font-size: 0.75rem;
   text-transform: uppercase;
 	background-size: cover;
   background-repeat: no-repeat;
-	background-image: url(../../../../assets/images/frames/header-frame.svg);
 }

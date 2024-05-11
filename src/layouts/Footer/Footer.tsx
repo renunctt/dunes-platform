@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Logo } from '../../components/UI/Logo/Logo'
+import Logo from '@/components/UI/Logo/Logo'
 import styles from './Footer.module.css'
 import twitterIcon from '@/assets/images/card/twitter.svg'
 import discordIcon from '@/assets/images/card/discord.svg'

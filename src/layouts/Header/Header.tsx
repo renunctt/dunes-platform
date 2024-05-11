@@ -1,55 +1,39 @@
-import { useRef } from 'react'
-import styles from './Header.module.css'
-import { Logo } from '../../components/UI/Logo/Logo'
-import { BaseButton } from '../../components/UI/buttons/BaseButton/BaseButton'
-import { NavBar } from '../../components/UI/NavBar/NavBar'
-import menuIcon from '@/assets/images/icons/menu-icon.svg'
-import { Transition } from 'react-transition-group'
+import { getImageUrl } from '@/helpers'
 import { useState } from 'react'
-import { DropdownMenu } from '../../components/UI/DropdownMenu/DropdownMenu'
-import { incubationItems, protocolItems } from '../../configs/navbar-config'
+import Logo from '@/components/UI/Logo/Logo'
+import NavBar from '@/components/UI/NavBar/NavBar'
+import css from './Header.module.css'
+import HeaderMenu from './HeaderMenu/HeaderMenu'
+import ConnectButton from '@/components/UI/ConnectButton/ConnectButton'
 
-export const Header = () => {
-  const [isOpen, setOpen] = useState(false)
-  const navRef = useRef(null)
+const Header = () => {
+	const [isOpen, setOpen] = useState(false)
 
-  return (
-    <>
-      <header className={`${styles.header} flex-center`}>
-        <div className={`${styles.headerWrapper} my-container flex-bw`}>
-          <Logo />
-          <NavBar />
-          <div className={`${styles.connect} flex-center`}>
-            <BaseButton>Connect wallet</BaseButton>
-          </div>
-          <button className={styles.menuBtn} onClick={() => setOpen(!isOpen)}>
-            <img src={menuIcon} alt="" />
-          </button>
+	const handleMenuBtn = () => {
+		setOpen(!isOpen)
+	}
 
-          <Transition
-            in={isOpen}
-            timeout={300}
-            unmountOnExit={true}
-            nodeRef={navRef}>
-            {(state) => (
-              <nav
-                ref={navRef}
-                className={`${styles.mobileNav} ${state}`}>
-                <p>Incubation</p>
-                <DropdownMenu items={incubationItems} />
+	return (
+		<>
+			<header className={css.header}>
+				<div className={css.container}>
+					<Logo />
+					<NavBar />
 
-                <p>Protocol</p>
-                <DropdownMenu items={protocolItems} />
-                <div className={styles.mobileConnect}>
-                  <BaseButton>Connect wallet</BaseButton>
-                </div>
-                
-              </nav>
-            )}
-          </Transition>
-        </div>
-      </header>
-      <div className={styles.gap}></div>
-    </>
-  )
+					<div className={`${css.connect} flex-center`}>
+						<ConnectButton />
+					</div>
+
+					<button className={css.menuBtn} onClick={handleMenuBtn}>
+						<img src={getImageUrl('menu-icon', 'nav')} alt='' />
+					</button>
+
+					<HeaderMenu isOpen={isOpen} />
+				</div>
+			</header>
+			<div className={css.gap}></div>
+		</>
+	)
 }
+
+export default Header

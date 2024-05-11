@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@skits/react-text-scramble": "^1.1.0",
     "@types/node": "^20.12.11",
     "framer-motion": "^11.1.9",
+    "gsap": "^3.12.5",
     "node": "^20.13.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

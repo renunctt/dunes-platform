@@ -1,25 +1,12 @@
-import { ButtonHTMLAttributes, FC } from 'react'
-import styles from './DropdownMenu.module.css'
-import { IDropdownItems } from '../../../configs/navbar-config'
-import { Link } from 'react-router-dom'
+import { FC } from 'react'
+import './DropdownMenu.css'
+import { DropdownMenuProps } from '.'
+import DropdownLink from './DropdownLink'
 
-interface DropdownMenu extends ButtonHTMLAttributes<HTMLButtonElement> {
-  items: IDropdownItems[]
-}
-
-export const DropdownMenu: FC<DropdownMenu> = ({ items }) => {
+export const DropdownMenu: FC<DropdownMenuProps> = ({ links }) => {
   return (
-    <div className={styles.menu}>
-      {items.map((item) => {
-        return (
-          <Link to={item.link} key={item.text}>
-            <div className={styles.link}>
-              <img src={item.icon} alt="" />
-              <p className="shuffle-hover-inside">{item.text}</p>
-            </div>
-          </Link>
-        )
-      })}
-    </div>
+    <ul className='dropdown-menu'>
+      {links.map(link =>  <DropdownLink link={link} key={link.text} />)}
+    </ul>
   )
 }

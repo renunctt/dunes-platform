@@ -1,0 +1,126 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  height: 60px;
+  padding-left: 38px;
+}
+
+.currency {
+  display: flex;
+  height: 60px;
+  border-top: var(--primary-border);
+  border-bottom: 1px solid white;
+}
+
+.inputWrap {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  border-right: var(--primary-border);
+}
+
+.input {
+  font-size: 19px;
+  background-color: initial;
+  padding-left: 38px;
+  outline: none;
+}
+
+.selectWrap {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.1)
+}
+
+.from {
+  display: flex;
+  height: 58px;
+  align-items: center;
+}
+
+.text {
+  font-size: 16px;
+  width: 50%;
+  padding-left: 38px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: var(--primary-border);
+}
+
+.currencySelect {
+  background-color: initial;
+  color: white;
+  font-size: 16px;
+  width: 180px;
+}
+
+.select {
+  background-color: initial;
+  color: white;
+  font-size: 16px;
+  width: 180px;
+}
+
+.selectWrap {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.to {
+  display: flex;
+  height: 58px;
+  align-items: center;
+  border-top: var(--primary-border);
+  border-bottom: 1px solid white;
+}
+
+.change {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.changeText {
+  font-size: 16px;
+  padding-left: 38px;
+}
+
+.changeText span {
+  background: linear-gradient(to right, #007227 0%, #81D100 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+}
+
+.changeBtn {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-right: 40px;
+}
+
+.changeBtn span {
+  height: 2px;
+  width: 10px;
+  background-color: #81D100;
+}
+
+.btn {
+  height: 60px;
+  border-top: 1px solid white;
+}

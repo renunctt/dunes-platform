@@ -1,0 +1,30 @@
+.top {
+	width: 587px;
+	margin: 0 auto;
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+	padding-bottom: 90px;
+}
+
+.title {
+	font-size: 60px;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 70px;
+}
+
+.title span {
+  background: linear-gradient(to right, #007227 0%, #81D100 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 34px;
+	border-top: var(--primary-border);
+	border-bottom: var(--primary-border);
+	margin-top: 20px;
+}

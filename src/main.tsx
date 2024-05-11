@@ -9,6 +9,7 @@ import InoLaunchpad from "./pages/InoLaunchpad.tsx";
 import { Swap } from "./pages/Swap.tsx";
 import IdoLaunchpad from "./pages/IdoLaunchpad.tsx";
 import Gallery from "./pages/Gallery.tsx";
+import Bridge from './pages/Bridge.tsx'
 
 const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
                 path: "gallery",
                 element: <Gallery />,
             },
+            {
+                path: "bridge",
+                element: <Bridge />
+            }
         ],
     },
 ]);

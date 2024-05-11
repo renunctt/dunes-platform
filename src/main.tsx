@@ -9,7 +9,11 @@ import InoLaunchpad from "./pages/InoLaunchpad.tsx";
 import { Swap } from "./pages/Swap.tsx";
 import IdoLaunchpad from "./pages/IdoLaunchpad.tsx";
 import Gallery from "./pages/Gallery.tsx";
+<<<<<<< HEAD
 import Staking from "./pages/Staking.tsx";
+=======
+import Bridge from './pages/Bridge.tsx'
+>>>>>>> origin/main
 
 const router = createBrowserRouter([
     {
@@ -41,9 +45,15 @@ const router = createBrowserRouter([
                 element: <Gallery />,
             },
             {
+<<<<<<< HEAD
                 path: "staking",
                 element: <Staking />,
             },
+=======
+                path: "bridge",
+                element: <Bridge />
+            }
+>>>>>>> origin/main
         ],
     },
 ]);

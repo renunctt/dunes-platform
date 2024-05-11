@@ -11,6 +11,8 @@ import goblinoidImg from "../assets/images/inos/goblinoidImg.png";
 import quanumImg from "../assets/images/inos/quanumImg.png";
 import sweetImg from "../assets/images/inos/sweetImg.png";
 import trainersImg from "../assets/images/inos/trainersImg.png";
+import brightImg from "../assets/images/inos/brightImg.png";
+import formImg from "../assets/images/inos/formImg.png";
 
 import pondImg from "../assets/images/upcoming/pond-img.png";
 import pondIcon from "../assets/images/upcoming/pond-icon.png";
@@ -123,6 +125,21 @@ export const inosItem: inosItemProps[] = [
         items: 5000,
         margin: "100px 0px -100px 0px",
     },
+    {
+        title: "Bright Joy",
+        img: brightImg,
+        price: "2,200",
+        items: 1000,
+        margin: "100px 0px -100px 0px",
+    },
+    {
+        title: "Form of Time",
+        img: formImg,
+        price: "2,000",
+        items: 140,
+        margin: "100px 0px -100px 0px",
+    },
+    
 ];
 
 export const upcomingItems: upcomingItemsProps[] = [

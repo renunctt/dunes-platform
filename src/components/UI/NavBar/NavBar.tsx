@@ -2,14 +2,14 @@ import arrowIcon from '@/assets/images/icons/arrow-white.svg'
 import styles from './NavBar.module.css'
 import { DropdownMenu } from '../DropdownMenu/DropdownMenu'
 import { useState } from 'react'
-import { incubationItems, protocolItems } from '../../../configs/navbar-config'
+import { navIncubationLinks, navProtocolLinks } from '@/layouts/Header'
 
 interface DropdownVisibility {
   protocol: boolean
   incubation: boolean
 }
 
-export const NavBar = () => {
+const NavBar = () => {
   const [dropdownVisibility, setDropdownVisibility] =
     useState<DropdownVisibility>({
       protocol: false,
@@ -42,7 +42,7 @@ export const NavBar = () => {
             <img src={arrowIcon} alt="" />
           </button>
           {dropdownVisibility.incubation && (
-            <DropdownMenu items={incubationItems} />
+            <DropdownMenu links={navIncubationLinks} />
           )}
         </div>
 
@@ -55,10 +55,12 @@ export const NavBar = () => {
             <img src={arrowIcon} alt="" />
           </button>
           {dropdownVisibility.protocol && (
-            <DropdownMenu items={protocolItems} />
+            <DropdownMenu links={navProtocolLinks} />
           )}
         </div>
       </nav>
     </>
   )
 }
+
+export default NavBar

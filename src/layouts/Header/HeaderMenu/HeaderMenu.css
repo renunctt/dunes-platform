@@ -1,0 +1,21 @@
+.header-nav {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: -260px;
+	width: 250px;
+	height: 100vh;
+	background-color: var(--bg-color-primary);
+	transition: transform 0.3s;
+	border-right: var(--primary-border);
+}
+
+.header-nav p {
+	padding: 20px;
+}
+
+@media (max-width: 890px) {
+	.header-nav {
+		display: block;
+	}
+}

@@ -8,7 +8,7 @@ const DropdownLink: FC<DropdownLinkProps> = ({ link }) => {
 	return (
 		<li className='dropdown-list'>
 			<Link to={link.link} key={link.text}>
-				<img src={getImageUrl(link.icon)} alt='' />
+				<img src={getImageUrl(link.icon, 'nav')} alt='' />
 				{link.text}
 			</Link>
 		</li>

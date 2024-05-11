@@ -25,7 +25,7 @@ const Header = () => {
 					</div>
 
 					<button className={css.menuBtn} onClick={handleMenuBtn}>
-						<img src={getImageUrl('menu-icon')} alt='' />
+						<img src={getImageUrl('menu-icon', 'nav')} alt='' />
 					</button>
 
 					<HeaderMenu isOpen={isOpen} />

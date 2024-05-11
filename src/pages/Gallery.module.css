@@ -1,0 +1,15 @@
+.line {
+    position: absolute;
+    left: 50.05%;
+    z-index: -10;
+    top: 0;
+    height: 1180px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 890px) {
+    .line {
+        display: none;
+    }
+}

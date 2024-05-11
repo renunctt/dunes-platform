@@ -1,0 +1,29 @@
+.bridge {
+  width: 100%;
+}
+
+.container {
+  width: 818px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border-left: var(--primary-border);
+  border-right: var(--primary-border);
+}
+
+.form {
+  border-top: var(--primary-border);
+  border-bottom: var(--primary-border);
+}
+
+.formContainer {
+  width: 587px;
+  margin: 0 auto;
+}
+
+.bottom {
+  width: 587px;
+  height: 154px;
+  margin: 0 auto;
+  border-left: var(--primary-border);
+  border-right: var(--primary-border);
+}

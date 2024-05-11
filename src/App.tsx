@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 
-  let animationTimeout: number
+  let animationTimeout
   const letterRegex = /[a-zA-Zа-яА-Я]/
   const runes = [
     'ᚠ',

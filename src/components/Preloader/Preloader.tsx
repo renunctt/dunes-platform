@@ -3,18 +3,16 @@ import css from "./Preloader.module.css";
 import logo from "@/assets/images/preloader.png";
 import { motion } from "framer-motion";
 
-const Preloader = (isLoaded: boolean) => {
+const Preloader = () => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    if(isLoaded) {
-      var timer = setTimeout(() => {
-        setVisible(false);
-      }, 1000);
-    }
-    
+    const timer = setTimeout(() => {
+      setVisible(false);
+    }, 3000);
+
     return () => clearTimeout(timer);
-  }, [isLoaded]);
+  }, []);
 
   useEffect(() => {
     if (visible) {

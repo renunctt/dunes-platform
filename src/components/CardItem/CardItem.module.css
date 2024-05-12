@@ -4,11 +4,12 @@
 
 .top {
   width: 384px;
-  height: 47px;
+  height: 147px;
   border: 1px solid #414141;
   border-bottom: none;
   position: relative;
   z-index: -1;
+  margin-bottom: -100px;
 }
 
 .content {
@@ -20,7 +21,7 @@
   width: 384px;
   border-right: none;
   z-index: 1;
-  border-bottom: -100px;
+  
 }
 
 .cardBottom {

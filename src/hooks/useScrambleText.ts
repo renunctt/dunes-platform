@@ -1,107 +1,91 @@
-import { useCallback, useRef } from 'react'
+import React, { useCallback, useRef } from 'react'
 
 type RefType = React.MutableRefObject<any>
 
+const letterRegex = /[a-zA-Zа-яА-Я]/
+const RUNES = [
+	'ᚠ',
+	'ᚢ',
+	'ᚦ',
+	'ᚨ',
+	'ᚱ',
+	'ᚲ',
+	'ᚹ',
+	'ᚾ',
+	'ᛁ',
+	'ᛃ',
+	'ᛇ',
+	'ᛈ',
+	'ᛉ',
+	'ᛊ',
+	'ᛏ',
+	'ᛒ',
+	'ᛚ',
+	'ᛜ',
+]
+
 export const useScrambleText = (): readonly [RefType, () => void] => {
 	const ref = useRef(null)
-  
+	let animationTimeout
+	let isAnimating = false
+	let previousElement: Element | null = null
+
 	const reload = useCallback(() => {
-		console.log('Reload')
+		if (isAnimating) {
+			return
+		}
+		const content = ref.current?.textContent
+		if (isAnimating) {
+			clearTimeout(animationTimeout)
+			if (previousElement) {
+				isAnimating = false
+			}
+		}
+		scrambleToRunesAndBack(content)
+		isAnimating = true
+		previousElement = ref.current
 	}, [ref])
+
+	const scrambleToRunesAndBack = (text: string) => {
+		const textArray = text.split('')
+		let isRunes = true
+
+		const step = () => {
+			let availableIndexes: number[] = []
+
+			textArray.forEach((char, index) => {
+				const isTextAndMatchesRegex = isRunes && letterRegex.test(char)
+				const isRunesAndIncludesRunes = !isRunes && RUNES.includes(char)
+
+				if (isTextAndMatchesRegex || isRunesAndIncludesRunes) {
+					availableIndexes.push(index)
+				}
+			})
+
+			if (availableIndexes.length > 0) {
+				const rand =
+					availableIndexes[Math.floor(Math.random() * availableIndexes.length)]
+
+				textArray[rand] = isRunes
+					? RUNES[Math.floor(Math.random() * RUNES.length)]
+					: text.split('')[rand]
+
+				ref.current.textContent = textArray.join('')
+				animationTimeout = setTimeout(step, 15)
+			} else {
+				if (isRunes) {
+					isRunes = false
+					step()
+				} else {
+					clearTimeout(animationTimeout)
+					ref.current.textContent = text
+					isAnimating = false
+				}
+			}
+		}
+
+		step()
+	}
 
 	return [ref, reload] as const
 }
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   var shuffleElements = document.querySelectorAll('.shuffle-hover-inside')
-
-//   shuffleElements.forEach(function (shuffleElement) {
-//     if (shuffleElement) {
-//       shuffleElement.setAttribute('data-text', shuffleElement.textContent || '')
-//     }
-//   })
-
-//   let animationTimeout
-//   const letterRegex = /[a-zA-Zа-яА-Я]/
-//   const runes = [
-//     'ᚠ',
-//     'ᚢ',
-//     'ᚦ',
-//     'ᚨ',
-//     'ᚱ',
-//     'ᚲ',
-//     'ᚹ',
-//     'ᚾ',
-//     'ᛁ',
-//     'ᛃ',
-//     'ᛇ',
-//     'ᛈ',
-//     'ᛉ',
-//     'ᛊ',
-//     'ᛏ',
-//     'ᛒ',
-//     'ᛚ',
-//     'ᛜ'
-//   ]
-
-//   let isAnimating = false
-//   let previousElement: Element | null = null
-
-//   function shuffleToRunesAndBack(element: Element, originalText: string) {
-//     const copyText = originalText
-//     let elementTextArray =
-//       copyText.length <= 10
-//         ? copyText.split('')
-//         : copyText.slice(0, 10).split('')
-//     let isTextToRunes = true
-
-//     function shuffleStep() {
-//       let availableIndexes: number[] = []
-//       elementTextArray.forEach(function (char, index) {
-//         if (
-//           (isTextToRunes && letterRegex.test(char)) ||
-//           (!isTextToRunes && runes.includes(char))
-//         ) {
-//           availableIndexes.push(index)
-//         }
-//       })
-//       if (availableIndexes.length > 0) {
-//         let randomIndex =
-//           availableIndexes[Math.floor(Math.random() * availableIndexes.length)]
-//         elementTextArray[randomIndex] = isTextToRunes
-//           ? runes[Math.floor(Math.random() * runes.length)]
-//           : originalText[randomIndex]
-//         element.textContent = elementTextArray.join('')
-//         animationTimeout = setTimeout(shuffleStep, 15)
-//       } else {
-//         if (isTextToRunes) {
-//           isTextToRunes = false
-//           shuffleStep()
-//         } else {
-//           clearTimeout(animationTimeout)
-//           element.textContent = originalText
-//           isAnimating = false
-//         }
-//       }
-//     }
-//     shuffleStep()
-//   }
-
-//   shuffleElements.forEach(function (shuffleElement) {
-//     shuffleElement.addEventListener('mouseenter', function () {
-//       let element = shuffleElement
-//       let originalText = element.getAttribute('data-text')
-//       if (isAnimating) {
-//         clearTimeout(animationTimeout)
-//         if (previousElement) {
-//           previousElement.textContent =
-//             previousElement.getAttribute('data-text')
-//           isAnimating = false
-//         }
-//       }
-//       shuffleToRunesAndBack(element, originalText || '')
-//       isAnimating = true
-//       previousElement = element
-//     })
-//   })
-// })

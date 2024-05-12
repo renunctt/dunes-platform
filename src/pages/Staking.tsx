@@ -6,7 +6,7 @@ import warningIcon from "@/assets/images/card/warning.svg";
 import binanceIcon from "@/assets/images/stockMarket/binanceIcon.svg";
 import ethereumIcon from "@/assets/images/stockMarket/EthereumIcon.svg";
 import arbitrumIcon from "@/assets/images/stockMarket/ArbitrumIcon.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const markets = [
     { img: binanceIcon, name: "Binance" },
@@ -17,6 +17,10 @@ const markets = [
 const days = ["30 Days", "90 Days", "180 Days", "270 Days"];
 
 const Staking = () => {
+    useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
     const [market, setMarket] = useState("Binance");
     const [day, setDay] = useState("30 Days");
 

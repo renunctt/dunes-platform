@@ -2,8 +2,13 @@ import { SwapCalc } from "../components/SwapCalc/SwapCalc";
 import styles from "./Swap.module.css";
 import heroCoin1 from "../assets/images/hero-coin.png";
 import heroCoin2 from "../assets/images/hero-coin-2.png";
+import { useEffect } from 'react'
 
 export const Swap = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
   return (
     <section className={styles.swap}>
       <div className={styles.container}>

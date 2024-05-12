@@ -1,6 +1,7 @@
 import BridgeTop from '@/components/Bridge/BridgeTop/BridgeTop'
 import css from './Bridge.module.css'
 import BridgeForm from '@/components/Bridge/BridgeForm/BridgeForm'
+import { useEffect } from 'react'
 
 const runes1 = Array.from({ length: 11 }, (_, index) => {
 	return new URL(
@@ -10,6 +11,10 @@ const runes1 = Array.from({ length: 11 }, (_, index) => {
 })
 
 const Bridge = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
 	return (
 		<section className={css.bridge}>
 			<div className={css.bridgeWrap}>

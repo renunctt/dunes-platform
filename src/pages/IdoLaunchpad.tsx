@@ -5,6 +5,7 @@ import { FinishedItems } from '../components/FinishedItems/FinishedItems'
 import { finishedItem, upcomingItems } from '../constants/LounchpadConstants'
 import { UpcomingItems } from '../components/UpcomingItems/UpcomingItems'
 import styles from './IdoLaunchpad.module.css'
+import { useEffect } from 'react'
 
 const Title = () => (
 	<>
@@ -13,6 +14,10 @@ const Title = () => (
 )
 
 const IdoLaunchpad = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
 	return (
 		<>
 			<Hero

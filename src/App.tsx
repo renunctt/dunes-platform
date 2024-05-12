@@ -5,12 +5,12 @@ import { Footer } from './layouts/Footer/Footer'
 import Preloader from './components/Preloader/Preloader'
 
 export const App = () => {
-  return (
-    <>
-      <Preloader />
-      <Header />
-      <Outlet />
-      <Footer />
-    </>
-  )
+	return (
+		<>
+			<Preloader />
+			<Header />
+			<Outlet />
+			<Footer />
+		</>
+	)
 }

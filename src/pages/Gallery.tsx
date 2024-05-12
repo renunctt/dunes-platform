@@ -2,10 +2,14 @@ import GalleryMain from "@/components/GallerySections/GalleryMain/GalleryMain";
 import GalleryTop from "@/components/GallerySections/GalleryTop/GalleryTop";
 import styles from "./Gallery.module.css"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const Gallery = () => {
+    useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
     const [isActive, setActive] = useState("ALL");
     return (
         <div className={styles.container}>

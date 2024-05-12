@@ -9,7 +9,6 @@ import RightArrow from "../../assets/images/icons/right-gray-arrow.svg";
 import { inosItem, upcomingItems } from "../../constants/LounchpadConstants";
 import INOSItem from "../INOSItem/INOSItem";
 import { UpcomingItems } from "../UpcomingItems/UpcomingItems";
-import ScrollText from '../ScrollText'
 
 const InoLaunchpadSection = () => {
   const [isFinished, setFinished] = useState(false);

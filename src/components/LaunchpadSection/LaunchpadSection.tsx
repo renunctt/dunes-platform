@@ -2,7 +2,6 @@ import { useState } from "react";
 import { FledAnimation } from "../FledAnimation/FledAnimation";
 import styles from "./LaunchpadSection.module.css";
 import arrowIcon from "@/assets/images/icons/featured-arrow.svg";
-import ScrollText from '../ScrollText'
 
 interface ICardSection {
     firstItems: React.ReactElement;

@@ -5,6 +5,7 @@ import { FledAnimation } from '../FledAnimation/FledAnimation'
 import bgImage from '../../assets/images/launch-hero.png'
 import totemImage from '../../assets/images/totem.png'
 import { useEffect, useState } from 'react'
+import ScrollText from '../ScrollText'
 
 export const ApplySection = () => {
 	const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })
@@ -38,7 +39,7 @@ export const ApplySection = () => {
 						<div className={styles.lineY}></div>
 						<h2 className={styles.title}>
 							<FledAnimation>
-								Aiming for successful token listing?
+								<ScrollText text="Aiming for successful token listing?" />
 							</FledAnimation>
 							<img className={styles.titleIcon} src={arrowICon} alt='' />
 						</h2>

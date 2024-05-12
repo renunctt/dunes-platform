@@ -4,6 +4,7 @@ import styles from './FledAnimation.module.css'
 
 interface FledAnimationProps {
 	children: ReactNode
+  isText?: boolean
 }
 
 export const FledAnimation: FC<FledAnimationProps> = ({ children }) => {

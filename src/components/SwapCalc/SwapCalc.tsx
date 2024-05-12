@@ -98,7 +98,7 @@ export const SwapCalc = () => {
 						<input
 							className={styles.input}
 							value={value}
-							onChange={calc}
+							onChange={handleChange}
 							type='text'
 							name=''
 							id=''

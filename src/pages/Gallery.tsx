@@ -8,11 +8,11 @@ import { useState } from "react";
 const Gallery = () => {
     const [isActive, setActive] = useState("ALL");
     return (
-        <>
+        <div className={styles.container}>
             <GalleryTop isActive={isActive} setActive={setActive} />
             <GalleryMain isActive={isActive} />
             <div className={styles.line} />
-        </>
+        </div>
     );
 };
 

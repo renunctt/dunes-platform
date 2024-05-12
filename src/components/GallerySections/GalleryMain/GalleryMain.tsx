@@ -1,13 +1,22 @@
 import styles from "./GalleryMain.module.css";
 import { inosItem } from "@/constants/LounchpadConstants";
 import GalleryItem from "./GalleryItem/GalleryItem";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 interface IGalleryMain {
   isActive: string;
 }
 
 const GalleryMain = ({ isActive }: IGalleryMain) => {
+  const [end, setEnd] = useState(8);
+  const [array, setArray] = useState(inosItem.slice(0, 8));
+
+  useEffect(() => {
+    if (inosItem.length >= end) {
+      setArray(inosItem.slice(0, end));
+    }
+  }, [end]);
+
   return (
     <>
       <div className={styles.container}>
@@ -15,12 +24,12 @@ const GalleryMain = ({ isActive }: IGalleryMain) => {
           <div className={styles.items}>
             {isActive && (
               <>
-                {inosItem.map((item, index) => {
+                {array.map((item, index) => {
                   return (
                     <>
                       <GalleryItem {...item} key={item.title} />
                       {index > 0 &&
-                        index !== inosItem.length - 1 &&
+                        index + 1 !== end &&
                         (index + 1) % 4 === 0 && (
                           <div
                             className={styles.lines}
@@ -39,8 +48,13 @@ const GalleryMain = ({ isActive }: IGalleryMain) => {
           </div>
         </div>
       </div>
-      <div className={styles.buttonWrapper}>
-        <Link to={'/project-info'} className={styles.button}>View more</Link>
+      <div
+        className={styles.buttonWrapper}
+        onClick={() => setEnd((prev) => prev + 4)}
+      >
+        <button className={styles.button} disabled={inosItem.length === end}>
+          View more
+        </button>
       </div>
     </>
   );

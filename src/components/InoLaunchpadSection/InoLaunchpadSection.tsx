@@ -9,6 +9,7 @@ import RightArrow from "../../assets/images/icons/right-gray-arrow.svg";
 import { inosItem, upcomingItems } from "../../constants/LounchpadConstants";
 import INOSItem from "../INOSItem/INOSItem";
 import { UpcomingItems } from "../UpcomingItems/UpcomingItems";
+import ScrollText from '../ScrollText'
 
 const InoLaunchpadSection = () => {
   const [isFinished, setFinished] = useState(false);
@@ -52,7 +53,7 @@ const InoLaunchpadSection = () => {
         <div className={styles.left}>
           <h2 className={styles.title}>
             <img className={styles.titleLeft} src={arrowIcon} alt="" />
-            <FledAnimation>INOs</FledAnimation>
+            <FledAnimation><ScrollText text="INOs" /></FledAnimation>
             <img className={styles.titleRight} src={arrowIcon} alt="" />
           </h2>
           <div className={styles.box}>

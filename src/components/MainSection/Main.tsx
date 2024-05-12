@@ -1,6 +1,7 @@
 import styles from './Main.module.css'
 import bgVideo from '../../assets/videos/main-bg.mp4'
-import { useEffect, useRef } from 'react'
+import { useContext, useEffect, useRef } from 'react'
+import { LoadContext } from '@/App'
 
 const MyHr = () => {
 	return <p className={styles.hr}>{'\n'}</p>
@@ -8,6 +9,7 @@ const MyHr = () => {
 
 export const Main = () => {
 	const videoRef = useRef(null)
+	const setIsLoaded = useContext(LoadContext);
 
 	useEffect(() => {
 		const video = videoRef.current
@@ -39,6 +41,7 @@ export const Main = () => {
 				loop
 				playsInline
 				src={bgVideo}
+				onLoad={() => setIsLoaded(true)}
 			/>
 			<div className={`${styles.mainWrapper} my-container`}>
 				<h1 className={styles.title}>

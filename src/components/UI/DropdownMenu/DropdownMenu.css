@@ -16,4 +16,8 @@
 	align-items: center;
 	gap: 12px;
 	border-bottom: var(--primary-border);
+
+	&:hover {
+		color: #81D100;
+	}
 }

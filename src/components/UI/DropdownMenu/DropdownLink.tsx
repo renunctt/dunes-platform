@@ -3,13 +3,16 @@ import { DropdownLinkProps } from '.'
 import { Link } from 'react-router-dom'
 import { getImageUrl } from '@/helpers'
 import './DropdownMenu.css'
+import { useScrambleText } from '@/hooks/useScrambleText'
 
 const DropdownLink: FC<DropdownLinkProps> = ({ link }) => {
+	const [ref, reload] = useScrambleText()
+
 	return (
-		<li className='dropdown-list'>
+		<li onMouseEnter={reload} className='dropdown-list'>
 			<Link to={link.link} key={link.text}>
 				<img src={getImageUrl(link.icon, 'nav')} alt='' />
-				{link.text}
+				<p ref={ref}>{link.text}</p>
 			</Link>
 		</li>
 	)

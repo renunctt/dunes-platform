@@ -3,10 +3,10 @@ import './DropdownMenu.css'
 import { DropdownMenuProps } from '.'
 import DropdownLink from './DropdownLink'
 
-export const DropdownMenu: FC<DropdownMenuProps> = ({ links }) => {
+export const DropdownMenu: FC<DropdownMenuProps> = ({ links, close }) => {
   return (
     <ul className='dropdown-menu'>
-      {links.map(link =>  <DropdownLink link={link} key={link.text} />)}
+      {links.map(link =>  <DropdownLink close={close} link={link} key={link.text} />)}
     </ul>
   )
 }

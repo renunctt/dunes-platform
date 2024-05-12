@@ -1,160 +1,190 @@
 .calc {
-	border: 1px solid white;
-	width: 587px;
-	background-color: var(--bg-color-primary);
+  border: 1px solid white;
+  width: 587px;
+  background-color: var(--bg-color-primary);
 }
 
 .top {
-	display: flex;
+  display: flex;
 }
 
 .top div {
-	display: flex;
-	align-items: center;
-	font-family: var(--font-family-base);
-	font-size: 16px;
-	font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-weight: 500;
 
-	width: 50%;
-	height: 66px;
-	border-bottom: 1px solid white;
+  width: 50%;
+  height: 66px;
+  border-bottom: 1px solid white;
 }
 
 .topLeft {
-	padding-left: 38px;
-	justify-content: start;
-	border-right: var(--primary-border);
-	color: #81d100;
+  padding-left: 38px;
+  justify-content: start;
+  border-right: var(--primary-border);
+  color: #81d100;
 }
 
 .topRight {
-	color: rgba(255, 255, 255, 0.3);
-	justify-content: center;
+  color: rgba(255, 255, 255, 0.3);
+  justify-content: center;
 }
 
 .mid {
-	width: 100%;
-	position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .cryptoIcon {
-	width: 28px;
+  width: 28px;
 }
 
 .info {
-	width: 50%;
-	height: 66px;
-	padding-left: 38px;
-	display: flex;
-	justify-content: start;
-	align-items: center;
-	border-right: var(--primary-border);
-	color: rgba(255, 255, 255, 0.6);
+  width: 50%;
+  height: 66px;
+  padding-left: 38px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-right: var(--primary-border);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .send {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 66px;
-	background-color: rgba(255, 255, 255, 0.1);
-	border-top: var(--primary-border);
-	border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 66px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: var(--primary-border);
+  border-bottom: 1px solid white;
 }
 
 .sendWallet {
-	width: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: start;
-	padding-left: 38px;
-	gap: 12px;
-	border-right: var(--primary-border);
-	height: 100%;
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 38px;
+  gap: 12px;
+  border-right: var(--primary-border);
+  height: 100%;
 }
 
 .sendSelect {
-	background-color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.optionsWrapper {
+	position: absolute;
+	top: 50px;
+	left: 27%;
+	background-color: rgba(30, 30, 30, 0.5);
+    backdrop-filter: blur(10px);
+    border: var(--primary-border);
+	border-bottom: none;
+	display: flex;
+	flex-direction: column;
+	z-index: 100;
+}
+
+.optionItem {
+	padding: 12px 20px;
+	font-size: 14px;
+	text-align: center;
+	border-bottom: var(--primary-border);
+}
+
+
+.optionItem:hover {
+	color: #81d100;
 }
 
 .inputWrap {
-	width: 50%;
+  width: 50%;
 }
 
 .input {
-	padding-right: 37px;
-	background-color: inherit;
-	width: 100%;
-	direction: rtl;
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	border: none;
-	outline: none;
+  padding-right: 37px;
+  background-color: inherit;
+  width: 100%;
+  direction: rtl;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
 }
 
 .swapBtnWrap {
-	position: absolute;
-	width: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .swapBtn {
-	position: relative;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: var(--bg-color-primary);
-	padding: 12px;
-	border: 1px solid white;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color-primary);
+  padding: 12px;
+  border: 1px solid white;
 }
 
 .exchange {
-	width: 100%;
-	font-family: var(--font-family-base);
-	font-weight: 500;
-	height: 66px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: linear-gradient(to right, #007227 0%, #81D100 100%);
-	cursor: pointer;
+  width: 100%;
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #007227 0%, #81d100 100%);
+  cursor: pointer;
 }
 
 @media (max-width: 890px) {
-	.top div {
-		font-size: 12px;
-		height: 49px;
-	}
+  .top div {
+    font-size: 12px;
+    height: 49px;
+  }
 
-	.topLeft {
-		padding-left: 22px;
-	}
+  .topLeft {
+    padding-left: 22px;
+  }
 
-	.info {
-		font-size: 12px;
-		height: 49px;
-	}
+  .info {
+    font-size: 12px;
+    height: 49px;
+  }
 
-	.send {
-		height: 49px;
-	}
+  .send {
+    height: 49px;
+  }
 
-	.sendSelect {
-		font-size: 12px;
-	}
+  .sendSelect {
+    font-size: 12px;
+  }
 
-	.input {
-		font-size: 12px;
-	}
+  .input {
+    font-size: 12px;
+  }
 
-	.swapBtn {
-		padding: 7px;
-	}
+  .swapBtn {
+    padding: 7px;
+  }
 
-	.swapBtn img {
-		width: 16px;
-	}
+  .swapBtn img {
+    width: 16px;
+  }
 
-	.exchange {
-		height: 49px;
-	}
+  .exchange {
+    height: 49px;
+  }
 }

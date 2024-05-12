@@ -6,9 +6,11 @@ export interface DropdownMenuLink {
 
 export interface DropdownMenuProps {
   links: DropdownMenuLink[]
+  close?: () => void
 }
 
 export interface DropdownLinkProps {
 	link: DropdownMenuLink
+  close: () => void
 }
 

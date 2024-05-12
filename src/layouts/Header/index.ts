@@ -1,7 +1,7 @@
 export const navIncubationLinks = [
   { text: 'Dune Swap', 		 link: '/swap', 	 icon: 'swap' },
   { text: 'Dune Bridge', 	 link: '/bridge',  icon: 'bridge' },
-  { text: 'Dunes Gallery', link: '/gallery', icon: 'gallery' }
+  { text: 'Dune Gallery', link: '/gallery', icon: 'gallery' }
 ]
 
 export const navProtocolLinks = [

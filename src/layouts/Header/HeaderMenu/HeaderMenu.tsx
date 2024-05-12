@@ -1,9 +1,14 @@
-import { useRef } from 'react'
+import { FC, useRef } from 'react'
 import { Transition } from 'react-transition-group'
 import MenuNav from './MenuNav'
 import './HeaderMenu.css'
 
-const HeaderMenu = ({ isOpen }: { isOpen: boolean }) => {
+interface HeaderMenuProps {
+	isOpen: boolean
+	close: () => void
+}
+
+const HeaderMenu: FC<HeaderMenuProps> = ({ isOpen, close }) => {
 	const menuRef = useRef(null)
 
 	return (
@@ -15,7 +20,7 @@ const HeaderMenu = ({ isOpen }: { isOpen: boolean }) => {
 		>
 			{state => (
 				<nav className={`${state} header-nav`} ref={menuRef}>
-					<MenuNav />
+					<MenuNav close={close} />
 				</nav>
 			)}
 		</Transition>

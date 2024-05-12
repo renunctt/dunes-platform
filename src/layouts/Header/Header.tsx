@@ -28,7 +28,7 @@ const Header = () => {
 						<img src={getImageUrl('menu-icon', 'nav')} alt='' />
 					</button>
 
-					<HeaderMenu isOpen={isOpen} />
+					<HeaderMenu isOpen={isOpen} close={() => setOpen(false)} />
 				</div>
 			</header>
 			<div className={css.gap}></div>

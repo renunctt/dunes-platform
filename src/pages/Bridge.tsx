@@ -2,6 +2,7 @@ import BridgeTop from '@/components/Bridge/BridgeTop/BridgeTop'
 import css from './Bridge.module.css'
 import BridgeForm from '@/components/Bridge/BridgeForm/BridgeForm'
 import { useEffect } from 'react'
+import { FledTopAnimation } from '../components/FledTopAnimation/FledTopAnimation'
 
 const runes1 = Array.from({ length: 11 }, (_, index) => {
 	return new URL(
@@ -37,14 +38,16 @@ const Bridge = () => {
 				<div className={css.form}>
 					<div className={css.container}>
 						<div className={css.formContainer}>
-							<BridgeForm />
+							<FledTopAnimation>
+								<BridgeForm />
+							</FledTopAnimation>
 						</div>
 					</div>
 				</div>
 				<div className={css.container}>
 					<div className={css.bottom}>
-            <div className={css.bottomLine}></div>
-          </div>
+						<div className={css.bottomLine}></div>
+					</div>
 				</div>
 				<div className={css.runesContainer}>
 					<div className={css.runes2}>

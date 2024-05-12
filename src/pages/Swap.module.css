@@ -119,6 +119,12 @@
 
 	.line2 {
 		display: block;
+		height: 60px;
+		transform: translateX(-1px);
+	}
+
+	.container2 {
+		border: none;
 	}
 
 	.calcWrap {

@@ -139,7 +139,62 @@ export const inosItem: inosItemProps[] = [
         items: 140,
         margin: "100px 0px -100px 0px",
     },
-    
+    {
+        title: "Bored Ape Pixel Club",
+        img: boredImg,
+        price: "5,000",
+        items: 3333,
+        margin: "100px 0px -100px 0px",
+    },
+    {
+        title: "Trainers Zero",
+        img: trainersImg,
+        price: "300",
+        items: 5000,
+        margin: "300px 0px -300px 0px",
+    },
+    {
+        title: "Break It All",
+        img: breakImg,
+        price: "500",
+        items: 3020,
+        margin: "100px 0px -100px 0px",
+    },
+    {
+        title: "Goblinoid",
+        img: goblinoidImg,
+        price: "1,000",
+        items: 2220,
+        margin: "100px 0px -100px 0px",
+    },
+    {
+        title: "Quantum Chains",
+        img: quanumImg,
+        price: "1,500",
+        items: 3333,
+        margin: "100px 0px -100px 0px",
+    },
+    {
+        title: "Sweet Oranges",
+        img: sweetImg,
+        price: "3,000",
+        items: 5000,
+        margin: "100px 0px -100px 0px",
+    },
+    {
+        title: "Bright Joy",
+        img: brightImg,
+        price: "2,200",
+        items: 1000,
+        margin: "100px 0px -100px 0px",
+    },
+    {
+        title: "Form of Time",
+        img: formImg,
+        price: "2,000",
+        items: 140,
+        margin: "100px 0px -100px 0px",
+    },
 ];
 
 export const upcomingItems: upcomingItemsProps[] = [

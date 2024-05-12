@@ -16,7 +16,7 @@
 	text-transform: uppercase;
 }
 
-.overviewWrapper p {
+.desc {
 	font-size: 14px;
 	color: rgba(255, 255, 255, 0.6);
 	margin-top: 34px;

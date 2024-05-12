@@ -2,6 +2,7 @@ import { FledAnimation } from '../FledAnimation/FledAnimation'
 import styles from './ProjectToken.module.css'
 import { FledTopAnimation } from '../FledTopAnimation/FledTopAnimation'
 import leftIcon from '../../assets/images/team/right.svg'
+import ScrollText from '../ScrollText';
 
 export const ProjectToken = () => {
 	return (
@@ -10,7 +11,7 @@ export const ProjectToken = () => {
 				<div className={styles.tokenTop}>
 					<div className={styles.tokenTopWrapper}>
 						<FledAnimation>
-							<h2 className={styles.title}>Tokenomics</h2>
+							<h2 className={styles.title}><ScrollText text="Tokenomics" /></h2>
 						</FledAnimation>
 
 						<img className={styles.left} src={leftIcon} alt='' />

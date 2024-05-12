@@ -17,6 +17,8 @@ const ScrollText = ({ text }: { text: string }) => {
 
 			if (elementRect.top < centerY && elementRect.bottom > centerY) {
 				reload()
+				window.removeEventListener('scroll', checkIfCentered)
+				window.removeEventListener('resize', checkIfCentered)
 			}
 		}
 

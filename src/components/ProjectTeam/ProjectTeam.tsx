@@ -2,6 +2,7 @@ import { FledAnimation } from '../FledAnimation/FledAnimation'
 import { TeamCards } from '../TeamCards/TeamCards'
 import styles from './ProjectTeam.module.css'
 import leftIcon from '../../assets/images/team/right.svg'
+import ScrollText from '../ScrollText'
 
 export const ProjectTeam = () => {
 	return (
@@ -10,7 +11,7 @@ export const ProjectTeam = () => {
 				<div className={styles.teamWrapper}>
 					<div className={styles.top}>
 						<FledAnimation>
-							<h2 className={styles.title}>Team</h2>
+							<h2 className={styles.title}><ScrollText text="Team" /></h2>
 						</FledAnimation>
 
 						<img className={styles.left} src={leftIcon} alt='' />

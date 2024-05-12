@@ -13,9 +13,11 @@
 
 .desc {
 	margin: 24px 0 10px;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.6);
 }
 
-.features p {
+.dc{
 	font-size: 14px;
 	color: rgba(255, 255, 255, 0.6);
 }

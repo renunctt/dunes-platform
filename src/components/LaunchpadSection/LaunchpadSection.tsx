@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FledAnimation } from "../FledAnimation/FledAnimation";
 import styles from "./LaunchpadSection.module.css";
 import arrowIcon from "@/assets/images/icons/featured-arrow.svg";
+import ScrollText from '../ScrollText'
 
 interface ICardSection {
     firstItems: React.ReactElement;
@@ -22,7 +23,7 @@ export const LaunchpadSection = ({ firstItems, secondItems, title }: ICardSectio
                             src={arrowIcon}
                             alt=""
                         />
-                        <FledAnimation>{title}</FledAnimation>
+                        <FledAnimation><ScrollText text={title} /></FledAnimation>
                         <img
                             className={styles.titleRight}
                             src={arrowIcon}

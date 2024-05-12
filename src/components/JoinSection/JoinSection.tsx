@@ -8,6 +8,7 @@ import stakeImg from "@/assets/images/icons/stakeImg.svg";
 import applyImg from "@/assets/images/icons/applyImg.svg";
 import setImg from "@/assets/images/icons/setImg.svg";
 import { FledTopAnimation } from "../FledTopAnimation/FledTopAnimation";
+import ScrollText from '../ScrollText'
 
 const firstCol = [
     {
@@ -52,7 +53,7 @@ const JoinSection = () => {
                                 alt=""
                             />
                             <FledAnimation>
-                                <span>HOW TO JOIN</span>
+                                <span><ScrollText text="HOW TO JOIN" /></span>
                             </FledAnimation>
                             <img
                                 className={styles.right}

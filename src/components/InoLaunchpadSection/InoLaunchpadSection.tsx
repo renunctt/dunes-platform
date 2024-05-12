@@ -53,7 +53,7 @@ const InoLaunchpadSection = () => {
         <div className={styles.left}>
           <h2 className={styles.title}>
             <img className={styles.titleLeft} src={arrowIcon} alt="" />
-            <FledAnimation><ScrollText text="INOs" /></FledAnimation>
+            <FledAnimation isText={true}>INOs</FledAnimation>
             <img className={styles.titleRight} src={arrowIcon} alt="" />
           </h2>
           <div className={styles.box}>

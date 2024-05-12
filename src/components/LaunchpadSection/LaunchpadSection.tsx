@@ -23,7 +23,7 @@ export const LaunchpadSection = ({ firstItems, secondItems, title }: ICardSectio
                             src={arrowIcon}
                             alt=""
                         />
-                        <FledAnimation><ScrollText text={title} /></FledAnimation>
+                        <FledAnimation isText={true}>{title}</FledAnimation>
                         <img
                             className={styles.titleRight}
                             src={arrowIcon}

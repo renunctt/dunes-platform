@@ -1,29 +1,213 @@
-.bridge {
-  width: 100%;
+.bridgeWrap {
+	position: relative;
 }
 
 .container {
-  width: 818px;
-  margin: 0 auto;
-  padding: 0 15px;
-  border-left: var(--primary-border);
-  border-right: var(--primary-border);
+	width: 818px;
+	margin: 0 auto;
+	padding: 0 15px;
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
 }
 
 .form {
-  border-top: var(--primary-border);
-  border-bottom: var(--primary-border);
+	border-top: var(--primary-border);
+	border-bottom: var(--primary-border);
 }
 
 .formContainer {
-  width: 587px;
-  margin: 0 auto;
+	width: 587px;
+	margin: 0 auto;
 }
 
 .bottom {
-  width: 587px;
-  height: 154px;
-  margin: 0 auto;
-  border-left: var(--primary-border);
-  border-right: var(--primary-border);
+	width: 587px;
+	height: 154px;
+	margin: 0 auto;
+	border-left: var(--primary-border);
+	border-right: var(--primary-border);
+}
+
+.runesContainer {
+	position: absolute;
+	width: 1200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.runes1 {
+	position: relative;
+	top: -280px;
+	left: -150px;
+}
+
+.r1 {
+	position: relative;
+	top: 180px;
+	left: 270px;
+}
+
+.r2 {
+	position: relative;
+	top: 210px;
+	left: 184px;
+}
+
+.r3 {
+	position: relative;
+	top: 280px;
+	left: 270px;
+}
+
+.r4 {
+	position: relative;
+	top: 320px;
+	left: 150px;
+}
+
+.r5 {
+	position: relative;
+	top: 347px;
+	left: 280px;
+	opacity: 0.5;
+}
+
+.r6 {
+	position: relative;
+	top: 400px;
+	left: 130px;
+	opacity: 0.5;
+}
+
+.r7 {
+	position: relative;
+	top: 447px;
+	left: 290px;
+}
+
+.r8 {
+	position: relative;
+	top: 470px;
+	left: 180px;
+	opacity: 0.5;
+}
+
+.r9 {
+	position: relative;
+	top: 547px;
+	left: 250px;
+	opacity: 0.5;
+}
+
+.runes2 {
+	position: absolute;
+	top: -410px;
+	right: -140px;
+}
+
+.l1 {
+	position: relative;
+	top: 180px;
+	right: 270px;
+	opacity: 0.5;
+}
+
+.l2 {
+	position: relative;
+	top: 220px;
+	right: 150px;
+}
+
+.l3 {
+	position: relative;
+	top: 260px;
+	right: 277px;
+}
+
+.l4 {
+	position: relative;
+	top: 320px;
+	right: 150px;
+}
+
+.l5 {
+	position: relative;
+	top: 320px;
+	right: 280px;
+	opacity: 0.5;
+}
+
+.l6 {
+	position: relative;
+	top: 380px;
+	right: 180px;
+	opacity: 0.5;
+}
+
+.l7 {
+	position: relative;
+	top: 420px;
+	right: 280px;
+}
+
+.l8 {
+	position: relative;
+	top: 480px;
+	right: 180px;
+	opacity: 0.5;
+}
+
+.l9 {
+	position: relative;
+	top: 500px;
+	right: 288px;
+	opacity: 0.5;
+}
+
+.bottomLine {
+  display: none;
+}
+
+@media (max-width: 890px) {
+	.container {
+		border: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	.form {
+		border: none;
+	}
+
+  .bottom {
+    width: 100%;
+    padding: 0 14px;
+    height: 100px;
+    border: none;
+  }
+
+  .bottomLine {
+    margin: 0 auto;
+    display: block;
+    width: 588px;
+    height: 100%;
+    border-left: var(--primary-border);
+	  border-right: var(--primary-border);
+  }
+
+  .runesContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+	.formContainer {
+		width: 100%;
+		padding: 0 15px;
+	}
+  .bottomLine {
+    width: 100%;
+  }
 }

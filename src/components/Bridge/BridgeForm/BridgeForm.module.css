@@ -124,3 +124,57 @@
   height: 60px;
   border-top: 1px solid white;
 }
+
+@media (max-width: 890px) {
+  .top {
+    font-size: 12px;
+    height: 47px;
+  }
+
+  .currency {
+    height: 47px;
+  }
+
+  .input {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .currencySelect {
+    padding: 0 20px;
+    font-size: 12px;
+  }
+
+  .select {
+    padding: 0 20px;
+    font-size: 12px;
+  }
+  .text {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+
+  .from {
+    height: 47px;
+  }
+  .to {
+    height: 47px;
+  }
+
+  .change {
+    height: 47px;
+  }
+
+  .changeText {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .changeBtn {
+    margin-right: 20px;
+  }
+
+  .btn {
+    height: 47px;
+  }
+}

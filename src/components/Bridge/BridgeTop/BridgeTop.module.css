@@ -1,4 +1,7 @@
 .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 587px;
 	margin: 0 auto;
 	border-left: var(--primary-border);
@@ -10,7 +13,7 @@
 	font-size: 60px;
 	font-weight: 500;
 	text-align: center;
-	padding-top: 70px;
+	padding: 70px 0 20px;
 }
 
 .title span {
@@ -20,11 +23,34 @@
 }
 
 .desc {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 34px;
 	border-top: var(--primary-border);
 	border-bottom: var(--primary-border);
-	margin-top: 20px;
+}
+
+@media (max-width: 890px) {
+	.top {
+		width: 100%;
+	}
+
+  .title {
+		width: 360px;
+		font-size: 42px;
+		border-left: var(--primary-border);
+		border-right: var(--primary-border);
+		padding-top: 40px;
+	}
+
+	.desc {
+		font-size: 16px;
+	}
+
+	.top {
+		border: none;
+		padding-bottom: 66px;
+	} 
 }

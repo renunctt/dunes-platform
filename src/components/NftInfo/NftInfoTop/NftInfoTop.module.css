@@ -68,3 +68,33 @@
 	font-size: 14px;
 	padding: 0 45px;
 }
+
+@media (max-width: 890px) {
+	.top {
+		width: 100%;
+		margin: 0 15px;
+		border-bottom: none;
+	}
+
+	.titleWrap {
+		width: 330px;
+	}
+
+	.title {
+		font-size: 30px;
+	}
+
+	.content {
+		border: none;
+	}
+
+	.name {
+		min-width: 330px;
+		border-top: var(--primary-border);
+		border-bottom: var(--primary-border);
+	}
+
+	.desc {
+		display: none;
+	}
+}

@@ -14,6 +14,7 @@ export const seiPandasTop: NftInfoTopProps = {
 export const seiPandasCard: NftInfoCardProps = {
 	nftImage,
 	nftFullTitle: 'Sei Pandas #700',
+	desc: 'The Sei Pandas Collection on blockchain is a set of digital assets dedicated to one of the most amazing animals on the planet, the pandas!',
 	total: 2222,
 	minted: 2222,
 	reserved: 6,

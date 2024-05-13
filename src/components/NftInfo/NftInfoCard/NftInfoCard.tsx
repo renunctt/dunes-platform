@@ -11,6 +11,10 @@ const NftInfoCard: FC<NftInfoCardProps> = props => {
 			</div>
 
 			<div className={css.content}>
+				<div className={css.desc1}>
+					{props.desc}
+				</div>
+
 				<div className={css.price}>
 					<div className={css.total}>
 						<p className={css.desc}>TOTAL</p>
@@ -37,7 +41,7 @@ const NftInfoCard: FC<NftInfoCardProps> = props => {
 						<div className={css.infoItems}>
 							<div className={css.infoItem}>
 								<p className={css.infoItemTop}>PRICE</p>
-								<p className={css.infoItemDesc}>{props.publicMint.price}</p>
+								<p className={css.infoItemDesc}>{props.publicMint.price} SEI</p>
 							</div>
 							<div className={css.infoItem}>
 								<p className={css.infoItemTop}>ITEMS</p>
@@ -52,7 +56,7 @@ const NftInfoCard: FC<NftInfoCardProps> = props => {
 
 					<div className={css.ended}>
 						<div className={css.infoTop}>EVENT ENDED</div>
-						<div className={css.infoItems}>
+						<div className={css.endedItems}>
 							<div className={css.endedItem}>
 								<p className={css.endedItemDesc}>{props.eventEnded.days}</p>
 								<p className={css.endedItemTop}>DAYS</p>

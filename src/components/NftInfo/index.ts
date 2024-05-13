@@ -8,6 +8,7 @@ interface NftInfoTopProps {
 interface NftInfoCardProps {
 	nftImage: string
 	nftFullTitle: string
+	desc: string
 	total: number
 	minted: number
 	reserved: number

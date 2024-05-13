@@ -1,4 +1,3 @@
-import logo from "@/assets/images/logo.svg";
 import styles from "./Logo.module.css";
 import { Link, useLocation } from "react-router-dom";
 import { LoadContext } from "@/App";
@@ -15,7 +14,7 @@ const Logo = () => {
     };
 	return (
 		<Link className={styles.logo} onClick={handleClick} to='/'>
-			<img src={logo} alt='Logo' />
+			<img src='logo.svg' alt='Logo' />
 		</Link>
 	)
 }

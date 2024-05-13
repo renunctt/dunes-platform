@@ -127,8 +127,8 @@ const NftInfoCard: FC<NftInfoCardProps> = props => {
 				</div>
 
 				<div className={css.bottom}>
-					<FledTopAnimation>
-						<div className={css.progress}>
+					<div className={css.progress}>
+						<FledTopAnimation>
 							<div className={css.progressInfo}>
 								<p>100%</p>
 								<p>(2,119 / 2,119)</p>
@@ -136,10 +136,10 @@ const NftInfoCard: FC<NftInfoCardProps> = props => {
 							<div className={css.progressLine}>
 								<span></span>
 							</div>
-						</div>
-					</FledTopAnimation>
-					<FledTopAnimation>
-						<div className={css.socials}>
+						</FledTopAnimation>
+					</div>
+					<div className={css.socials}>
+						<FledTopAnimation>
 							{props.socials.map(item => {
 								return (
 									<a
@@ -151,8 +151,8 @@ const NftInfoCard: FC<NftInfoCardProps> = props => {
 									</a>
 								)
 							})}
-						</div>
-					</FledTopAnimation>
+						</FledTopAnimation>
+					</div>
 				</div>
 			</div>
 		</div>

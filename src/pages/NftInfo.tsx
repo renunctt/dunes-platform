@@ -5,3 +5,5 @@ const NftInfo = () => {
 		</>
 	)
 }
+
+export default NftInfo

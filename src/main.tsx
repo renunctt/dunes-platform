@@ -11,6 +11,7 @@ import IdoLaunchpad from "./pages/IdoLaunchpad.tsx";
 import Gallery from "./pages/Gallery.tsx";
 import Staking from "./pages/Staking.tsx";
 import Bridge from "./pages/Bridge.tsx";
+import NftInfo from './pages/NftInfo.tsx'
 
 const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
             {
                 path: "staking",
                 element: <Staking />,
+            },
+            {
+                path: "nft-info",
+                element: <NftInfo />,
             },
         ],
     },

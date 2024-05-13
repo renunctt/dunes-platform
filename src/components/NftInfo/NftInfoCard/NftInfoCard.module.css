@@ -197,13 +197,13 @@
 	.card {
 		margin: 0 15px;
 		width: 331px;
-		border-right: none;
 		flex-direction: column;
 		justify-content: center;
 	}
 
 	.cardImage {
 		padding-bottom: 0;
+		border: none;
 	}
 
 	.cardImage img {
@@ -232,8 +232,12 @@
 		flex-direction: row;
 		width: 330px;
 		justify-content: space-between;
-		padding: 0 20px;
+		padding: 0 10px;
 		height: auto;
+	}
+
+	.price div span {
+		padding-right: 30px;
 	}
 
 	.warning {

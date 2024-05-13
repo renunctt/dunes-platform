@@ -1,102 +1,158 @@
 import { FC } from 'react'
 import css from './NftInfoCard.module.css'
 import warningIcon from '@/assets/images/nft/warning.svg'
+import { FledTopAnimation } from '@/components/FledTopAnimation/FledTopAnimation'
 
 const NftInfoCard: FC<NftInfoCardProps> = props => {
 	return (
 		<div className={css.card}>
-			<div className={css.cardImage}>
-				<img src={props.nftImage} alt={props.nftFullTitle} />
-				<p className={css.cardTitle}>{props.nftFullTitle}</p>
-			</div>
+			<FledTopAnimation>
+				<div className={css.cardImage}>
+					<img src={props.nftImage} alt={props.nftFullTitle} />
+					<p className={css.cardTitle}>{props.nftFullTitle}</p>
+				</div>
+			</FledTopAnimation>
 
 			<div className={css.content}>
-				<div className={css.desc1}>
-					{props.desc}
-				</div>
+				<FledTopAnimation>
+					<div className={css.desc1}>{props.desc}</div>
+				</FledTopAnimation>
 
 				<div className={css.price}>
 					<div className={css.total}>
-						<p className={css.desc}>TOTAL</p>
-						<span>{props.total}</span>
+						<FledTopAnimation>
+							<p className={css.desc}>TOTAL</p>
+							<span>{props.total}</span>
+						</FledTopAnimation>
 					</div>
 					<div className={css.minted}>
-						<p className={css.desc}>MINTED</p>
-						<span>{props.minted}</span>
+						<FledTopAnimation>
+							<p className={css.desc}>MINTED</p>
+							<span>{props.minted}</span>
+						</FledTopAnimation>
 					</div>
 					<div className={css.reserved}>
-						<p className={css.desc}>RESERVED</p>
-						<span>{props.reserved}</span>
+						<FledTopAnimation>
+							<p className={css.desc}>RESERVED</p>
+							<span>{props.reserved}</span>
+						</FledTopAnimation>
 					</div>
 				</div>
-
-				<div className={css.warning}>
-					<img src={warningIcon} alt='' />
-					<p>Listing will be available in {props.data}</p>
-				</div>
+				<FledTopAnimation>
+					<div className={css.warning}>
+						<img src={warningIcon} alt='' />
+						<p>Listing will be available in {props.data}</p>
+					</div>
+				</FledTopAnimation>
 
 				<div className={css.info}>
 					<div className={css.mint}>
-						<div className={css.infoTop}>PUBLIC MINT</div>
+						<FledTopAnimation>
+							<div className={css.infoTop}>PUBLIC MINT</div>
+						</FledTopAnimation>
+
 						<div className={css.infoItems}>
 							<div className={css.infoItem}>
-								<p className={css.infoItemTop}>PRICE</p>
-								<p className={css.infoItemDesc}>{props.publicMint.price} SEI</p>
+								<FledTopAnimation>
+									<p className={css.infoItemTop}>PRICE</p>
+								</FledTopAnimation>
+								<FledTopAnimation>
+									<p className={css.infoItemDesc}>
+										{props.publicMint.price} SEI
+									</p>
+								</FledTopAnimation>
 							</div>
 							<div className={css.infoItem}>
-								<p className={css.infoItemTop}>ITEMS</p>
-								<p className={css.infoItemDesc}>{props.publicMint.items}</p>
+								<FledTopAnimation>
+									<p className={css.infoItemTop}>ITEMS</p>
+								</FledTopAnimation>
+								<FledTopAnimation>
+									<p className={css.infoItemDesc}>{props.publicMint.items}</p>
+								</FledTopAnimation>
 							</div>
 							<div className={css.infoItem1}>
-								<p className={css.infoItemTop}>MAX</p>
-								<p className={css.infoItemDesc}>{props.publicMint.max}</p>
+								<FledTopAnimation>
+									<p className={css.infoItemTop}>MAX</p>
+								</FledTopAnimation>
+								<FledTopAnimation>
+									<p className={css.infoItemDesc}>{props.publicMint.max}</p>
+								</FledTopAnimation>
 							</div>
 						</div>
 					</div>
 
 					<div className={css.ended}>
-						<div className={css.infoTop}>EVENT ENDED</div>
+						<FledTopAnimation>
+							<div className={css.infoTop}>EVENT ENDED</div>
+						</FledTopAnimation>
+
 						<div className={css.endedItems}>
 							<div className={css.endedItem}>
-								<p className={css.endedItemDesc}>{props.eventEnded.days}</p>
-								<p className={css.endedItemTop}>DAYS</p>
+								<FledTopAnimation>
+									<p className={css.endedItemDesc}>{props.eventEnded.days}</p>
+								</FledTopAnimation>
+								<FledTopAnimation>
+									<p className={css.endedItemTop}>DAYS</p>
+								</FledTopAnimation>
 							</div>
 							<div className={css.endedItem}>
-								<p className={css.endedItemDesc}>{props.eventEnded.hrs}</p>
-								<p className={css.endedItemTop}>HRS</p>
+								<FledTopAnimation>
+									<p className={css.endedItemDesc}>{props.eventEnded.hrs}</p>
+								</FledTopAnimation>
+
+								<FledTopAnimation>
+									<p className={css.endedItemTop}>HRS</p>
+								</FledTopAnimation>
 							</div>
 							<div className={css.endedItem}>
-								<p className={css.endedItemDesc}>{props.eventEnded.min}</p>
-								<p className={css.endedItemTop}>MIN</p>
+								<FledTopAnimation>
+									<p className={css.endedItemDesc}>{props.eventEnded.min}</p>
+								</FledTopAnimation>
+
+								<FledTopAnimation>
+									<p className={css.endedItemTop}>MIN</p>
+								</FledTopAnimation>
 							</div>
 							<div className={css.endedItem1}>
-								<p className={css.endedItemDesc}>{props.eventEnded.sec}</p>
-								<p className={css.endedItemTop}>SEC</p>
+								<FledTopAnimation>
+									<p className={css.endedItemDesc}>{props.eventEnded.sec}</p>
+								</FledTopAnimation>
+
+								<FledTopAnimation>
+									<p className={css.endedItemTop}>SEC</p>
+								</FledTopAnimation>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div className={css.bottom}>
-					<div className={css.progress}>
-						<div className={css.progressInfo}>
-							<p>100%</p>
-							<p>(2,119 / 2,119)</p>
+					<FledTopAnimation>
+						<div className={css.progress}>
+							<div className={css.progressInfo}>
+								<p>100%</p>
+								<p>(2,119 / 2,119)</p>
+							</div>
+							<div className={css.progressLine}>
+								<span></span>
+							</div>
 						</div>
-						<div className={css.progressLine}>
-							<span></span>
+					</FledTopAnimation>
+					<FledTopAnimation>
+						<div className={css.socials}>
+							{props.socials.map(item => {
+								return (
+									<a
+										className={css.socialsLink}
+										key={item.alt}
+										href={item.link}
+									>
+										<img src={item.icon} alt={item.alt} />
+									</a>
+								)
+							})}
 						</div>
-					</div>
-
-					<div className={css.socials}>
-						{props.socials.map(item => {
-							return (
-								<a className={css.socialsLink} key={item.alt} href={item.link}>
-									<img src={item.icon} alt={item.alt} />
-								</a>
-							)
-						})}
-					</div>
+					</FledTopAnimation>
 				</div>
 			</div>
 		</div>

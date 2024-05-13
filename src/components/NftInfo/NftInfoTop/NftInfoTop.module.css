@@ -71,13 +71,14 @@
 
 @media (max-width: 890px) {
 	.top {
-		width: 100%;
+		width: 331px;
 		margin: 0 15px;
 		border-bottom: none;
 	}
 
 	.titleWrap {
-		width: 330px;
+		width: 327px;
+		border-right: none;
 	}
 
 	.title {
@@ -89,9 +90,10 @@
 	}
 
 	.name {
-		min-width: 330px;
+		min-width: 328px;
 		border-top: var(--primary-border);
 		border-bottom: var(--primary-border);
+		border-right: none;
 	}
 
 	.desc {

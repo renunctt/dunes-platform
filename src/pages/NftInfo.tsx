@@ -10,8 +10,10 @@ const NftInfo = () => {
 
 	return (
 		<>
-			<NftInfoTop {...seiPandasTop} />
-			<NftInfoCard {...seiPandasCard} />
+			<div className='flex flex-col items-center justify-center'>
+				<NftInfoTop {...seiPandasTop} />
+				<NftInfoCard {...seiPandasCard} />
+			</div>
 		</>
 	)
 }

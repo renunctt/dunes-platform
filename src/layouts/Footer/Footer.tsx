@@ -36,39 +36,48 @@ export const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<div className={`${styles.footerWrapper} my-container`}>
+				<div className={styles.logoTop}>
 				<Logo />
 
-				<div className={styles.content}>
-					<div className={styles.links}>
-						{links1.map(text => (
-							<FooterLink text={text} />
-						))}
-					</div>
-
-					<div className={styles.links}>
-						{links2.map(text => (
-							<FooterLink2 text={text} />
-						))}
-					</div>
-
-					<div className={styles.social}>
-						<p>Follow us</p>
-						<div className={styles.socialLinks}>
-							<a href='https://twitter.com'>
-								<img src={twitterIcon} alt='' />
-							</a>
-							<a href='https://discord.com'>
-								<img src={discordIcon} alt='' />
-							</a>
-							<a href='https://telegram.org'>
-								<img src={telegramIcon} alt='' />
-							</a>
-						</div>
-					</div>
 				</div>
 
-				<div className={styles.bigLogo}>
-					<img src={bigLogo} alt='' />
+				<div className={styles.content}>
+					<div className={styles.contentTop}>
+						<div className={styles.links}>
+							{links1.map(text => (
+								<FooterLink text={text} />
+							))}
+						</div>
+
+						<div className={styles.links}>
+							{links2.map(text => (
+								<FooterLink2 text={text} />
+							))}
+						</div>
+					</div>
+
+					<div className={styles.contentBottom}>
+						<div className={styles.social}>
+							<p>Follow us</p>
+							<div className={styles.socialLinks}>
+								<a href='https://twitter.com'>
+									<img src={twitterIcon} alt='' />
+								</a>
+								<a href='https://discord.com'>
+									<img src={discordIcon} alt='' />
+								</a>
+								<a href='https://telegram.org'>
+									<img src={telegramIcon} alt='' />
+								</a>
+							</div>
+						</div>
+
+						<div className={styles.bigLogo}>
+						<img src={bigLogo} alt='' />
+					</div>
+					</div>
+
+					
 				</div>
 			</div>
 

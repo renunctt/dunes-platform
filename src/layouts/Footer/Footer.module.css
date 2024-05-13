@@ -44,7 +44,8 @@
 }
 
 .socialLinks img {
-  min-width: 19px;
+  min-width: 30px;
+  max-width: 30px;
 }
 
 .contentTop {
@@ -90,7 +91,7 @@
   }
 
   .contentTop {
-    justify-content: space-between;
+    justify-content: start;
   }
 
   .contentBottom {
@@ -99,7 +100,7 @@
   }
 
   .links {
-    width: 150px;
+    width: 160px;
     margin: 0;
     font-size: 18px;
     padding-left: 15px;

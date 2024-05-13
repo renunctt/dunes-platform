@@ -3,6 +3,10 @@ import NftInfoTop from '@/components/NftInfo/NftInfoTop/NftInfoTop'
 import { seiPandasCard, seiPandasTop } from '@/constants/nftConstants'
 
 const NftInfo = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
 	return (
 		<>
 			<NftInfoTop {...seiPandasTop} />

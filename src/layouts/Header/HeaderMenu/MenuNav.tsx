@@ -3,6 +3,7 @@ import { DropdownMenu } from '@/components/UI/DropdownMenu/DropdownMenu'
 import { navIncubationLinks, navProtocolLinks } from '..'
 import { FC } from 'react'
 import Logo from '@/components/UI/Logo/Logo'
+import './HeaderMenu.css'
 
 interface MenuNavProps {
 	close: () => void
@@ -11,7 +12,7 @@ interface MenuNavProps {
 const MenuNav: FC<MenuNavProps> = ({ close }) => {
 	return (
 		<nav>
-			<div className='mt-5 ml-5' onClick={close}>
+			<div className='menu-nav-logo' onClick={close}>
 			<Logo />
 			</div>
 			<p>Incubation</p>

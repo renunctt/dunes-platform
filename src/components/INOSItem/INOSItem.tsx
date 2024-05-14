@@ -63,7 +63,7 @@ const INOSItem = (item:inosItemProps) => {
                 </div>
 
                 <Link
-                    to={"/nft-info"}
+                    to={"/nft-info/ino"}
                     className={styles.detail}
                 >
                     MORE DETAILS

@@ -62,7 +62,7 @@ const GalleryItem = (item: inosItemProps) => {
                     </div>
                 </div>
 
-                <Link to={"/nft-info"} className={styles.detail}>
+                <Link to={"/nft-info/gallery"} className={styles.detail}>
                     MORE DETAILS
                 </Link>
             </div>

@@ -26,7 +26,7 @@ const IdoLaunchpad = () => {
 					'Claim first access to the most important tokens in crypto, and then supercharge them with cutting-edge MEV tech.'
 				}
 				img={HeroImg}
-				firstButton='buy $DUNES'
+				firstButton='buy $DUNE'
 			/>
 			<LaunchpadSection title='IDOs' firstItems={<FinishedItems items={finishedItem} />} secondItems={<UpcomingItems items={upcomingItems} />} />
 			<div className={styles.bottom}>

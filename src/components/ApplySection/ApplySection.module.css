@@ -144,7 +144,20 @@
 	width: 680px;
 }
 
-@media  (max-width: 890px) {
+
+@media screen and (max-width: 1200px) {
+	.totem {
+		left: 400px;
+		top: 263px;
+	}
+	.totem img {
+		max-width: 500px;
+		min-width: none;
+	}
+}
+
+
+@media  (max-width: 650px) {
 	.top {
 		width: 118px;
 		height: 65px;

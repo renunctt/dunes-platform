@@ -97,8 +97,20 @@
 }
 
 @media  (max-width: 890px) {
-	.topLine {
-		width: 384px;
+	.top {
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+    }
+    .box button {
+        width: 100%;
+    }
+    .topLine {
+        width: 100%;
+    }
+	.line1 {
+		width: 50%;
 	}
 	.line2 {
 		display: none;

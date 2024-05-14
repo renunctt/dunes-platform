@@ -41,7 +41,7 @@ export const Main = () => {
 				loop
 				playsInline
 				src={bgVideo}
-				onLoad={() => setIsLoaded(true)}
+				onCanPlay={() => setIsLoaded(true)}
 			/>
 			<div className={`${styles.mainWrapper} my-container`}>
 				<h1 className={styles.title}>

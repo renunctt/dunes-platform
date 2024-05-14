@@ -3,9 +3,32 @@
 	justify-content: space-between;
 }
 
-@media  (max-width: 890px) {
+@media  (max-width: 1250px) {
 	.items {
-		flex-direction: column;
+		flex-wrap: wrap;
 		gap: 24px;
 	}
 }
+
+@media  (min-width: 430px) {
+	.items {
+		align-items: center;
+		
+	}
+}
+
+@media  (max-width: 890px) {
+	.items {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		border: var(--primary-border);
+	}
+}
+
+@media  (max-width: 410px) {
+	.items {
+		border: none;
+	}
+}
+
+

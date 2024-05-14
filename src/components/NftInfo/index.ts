@@ -3,6 +3,7 @@ type socialLink = { icon: string; link: string; alt: string }
 interface NftInfoTopProps {
 	name: string
 	description: string
+	title?: string
 }
 
 interface NftInfoCardProps {

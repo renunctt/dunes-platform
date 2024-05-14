@@ -51,7 +51,7 @@ const router = createBrowserRouter([
                 element: <Staking />,
             },
             {
-                path: "nft-info",
+                path: "nft-info/:id",
                 element: <NftInfo />,
             },
         ],

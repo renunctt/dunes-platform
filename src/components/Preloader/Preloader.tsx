@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import css from "./Preloader.module.css";
 import logo from "@/assets/images/preloader.png";
 import { motion } from "framer-motion";
+import { LoadContext } from "@/App";
 
-const Preloader = ({isLoaded}: {isLoaded:boolean}) => {
+const Preloader = () => {
   const [visible, setVisible] = useState(true);
+  const isLoaded = useContext(LoadContext);
 
   useEffect(() => {
     console.log(isLoaded)
-    if(!isLoaded) {
+    if(isLoaded) {
       var timer = setTimeout(() => {
         setVisible(false);
       }, 1000);

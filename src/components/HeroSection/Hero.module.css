@@ -83,6 +83,12 @@
     }
 
     .bgImage {
+        height: 400px;
+    }
+}
+@media (max-width: 550px) {
+
+    .bgImage {
         height: 229px;
     }
 }

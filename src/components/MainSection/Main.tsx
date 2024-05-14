@@ -41,7 +41,7 @@ export const Main = () => {
 				loop
 				playsInline
 				src={bgVideo}
-				onLoad={() => setIsLoaded(true)}
+				onCanPlay={() => setIsLoaded(true)}
 			/>
 			<div className={`${styles.mainWrapper} my-container`}>
 				<h1 className={styles.title}>
@@ -49,12 +49,12 @@ export const Main = () => {
 				</h1>
 
 				<div className={styles.desc}>
-					Platform forged from Sands <MyHr /> of ancient desert to provide <MyHr />
-					incubation to Innovations <MyHr /> on Runes protocol
+					Platform forged from Sands of ancient desert to provide
+					incubation to Innovations on Runes protocol
 				</div>
 
 				<div className={styles.box}>
-					<button className={styles.buy}>buy $DUNES</button>
+					<button className={styles.buy}>buy $DUNE</button>
 					<button className={styles.get}>Get started</button>
 				</div>
 			</div>

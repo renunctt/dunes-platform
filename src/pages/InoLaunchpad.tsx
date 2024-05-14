@@ -17,7 +17,7 @@ const InoLaunchpad = () => {
                 title={<Title />}
                 text={"Grab the best NFT project spots just at the time of the launch at Seedify INO Launchpad."}
                 img={HeroImg}
-                firstButton="buy $DUNES"
+                firstButton="buy $DUNE"
             />
             <InoLaunchpadSection />
             <JoinSection />

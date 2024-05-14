@@ -29,12 +29,12 @@ const Staking = () => {
 		<div className={styles.container}>
 			<div className={styles.leftWrapper}>
 				<h2 className={styles.title}>
-					<span>Stake</span> your $DUNES to join the best <span>IDOs</span>
+					<span>Stake</span> your $DUNE to join the best <span>IDOs</span>
 				</h2>
-				<button className={styles.leftButton}>buy $DUNES</button>
+				<button className={styles.leftButton}>buy $DUNE</button>
 				<div className={styles.warningWrapper}>
 					<img src={warningIcon} alt='warning image' />
-					Legacy $SFUND staking and farming pools are closed. The new pools are
+					Legacy $DUNE staking and farming pools are closed. The new pools are
 					open with Seed Staking Boosters. You can deposit now.
 				</div>
 				<img src={stakingImg} alt='' className={styles.bgImage} />
@@ -67,22 +67,22 @@ const Staking = () => {
 						</div>
 						<div className={styles.middleInfoWrapper}>
 							<div className={styles.infoText}>
-								<div>Staked Amount</div>0 $DUNES
+								<div>Staked Amount</div>0 $DUNE
 							</div>
 							<div className={`${styles.infoText} ${styles.middleInfoText}`}>
-								<div>Waller Balance</div>0 $DUNES
+								<div>Waller Balance</div>0 $DUNE
 							</div>
 							<div className={styles.infoText}>
 								<div>
 									Allowance <span>(Edit)</span>
 								</div>
-								0 $DUNES
+								0 $DUNE
 							</div>
 						</div>
 						<div className={styles.enterWrapper}>
 							<input
 								type='text'
-								placeholder='Enter Stake Amount ($DUNES Amount)'
+								placeholder='Enter Stake Amount ($DUNE Amount)'
 							/>
 							<button className={styles.enterButton}>MAX</button>
 						</div>

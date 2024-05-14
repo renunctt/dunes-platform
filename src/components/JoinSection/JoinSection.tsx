@@ -12,15 +12,15 @@ import ScrollText from '../ScrollText'
 
 const firstCol = [
     {
-        title: "Purchase $SFUND Tokens",
+        title: "Purchase $DUNE Tokens",
         subtitle:
-            "$SFUND is Seedify's token that enables its holders to participate in IDOs, INOs, stake and farm for passive income",
+            "$DUNE is Seedify's token that enables its holders to participate in IDOs, INOs, stake and farm for passive income",
         icon: purchaseImg,
     },
     {
-        title: "Stake or Farm your $SFUND",
+        title: "Stake or Farm your $DUNE",
         subtitle:
-            "Add your $SFUND to one of our staking or farming pools and earn passive income",
+            "Add your $DUNE to one of our staking or farming pools and earn passive income",
         icon: stakeImg,
     },
 ];

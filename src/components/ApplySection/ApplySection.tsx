@@ -1,5 +1,4 @@
 import styles from './ApplySection.module.css'
-import applyFrame from '../../assets/images/frames/apply-frame.svg'
 import arrowICon from '../../assets/images/icons/featured-arrow.svg'
 import { FledAnimation } from '../FledAnimation/FledAnimation'
 import bgImage from '../../assets/images/launch-hero.png'
@@ -52,7 +51,6 @@ export const ApplySection = () => {
 						<div className={styles.box}>
 							<FledAnimation>
 								<button onClick={() => navigate("/ido-launchpad")} className={styles.btn}>
-									{/* <img src={applyFrame} alt='' /> */}
 									Apply for IDO
 								</button>
 							</FledAnimation>

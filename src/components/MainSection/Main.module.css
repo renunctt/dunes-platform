@@ -91,7 +91,6 @@
     .box {
         padding-top: 42px;
         gap: 16px;
-        /* flex-direction: column; */
     }
 
     .buy,
@@ -115,5 +114,8 @@
     }
     .hr {
         display: block;
+    }
+    .box {
+        flex-direction: column;
     }
 }

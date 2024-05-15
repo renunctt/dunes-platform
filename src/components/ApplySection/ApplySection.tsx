@@ -5,9 +5,11 @@ import { FledAnimation } from '../FledAnimation/FledAnimation'
 import bgImage from '../../assets/images/launch-hero.png'
 import totemImage from '../../assets/images/totem.png'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export const ApplySection = () => {
 	const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const handleMouseMove = (e: MouseEvent) => {
@@ -49,8 +51,8 @@ export const ApplySection = () => {
 						</FledAnimation>
 						<div className={styles.box}>
 							<FledAnimation>
-								<button className={styles.btn}>
-									<img src={applyFrame} alt='' />
+								<button onClick={() => navigate("/ido-launchpad")} className={styles.btn}>
+									{/* <img src={applyFrame} alt='' /> */}
 									Apply for IDO
 								</button>
 							</FledAnimation>

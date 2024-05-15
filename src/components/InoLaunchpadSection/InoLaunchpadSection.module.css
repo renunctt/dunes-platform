@@ -76,12 +76,20 @@
 .upcoming {
     width: 192px;
     border-right: var(--primary-border);
+    transition: all 0.1s ease-in-out;
 }
 
+.upcoming:hover {
+    color: #fff;
+}
 .finished {
-    width: 190px;
+	width: 190px;
+    transition: all 0.1s ease-in-out;
 }
 
+.finished>p:hover {
+    color: #fff;
+}
 .items {
     display: flex;
     justify-content: space-between;

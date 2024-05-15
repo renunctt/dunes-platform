@@ -6,4 +6,11 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url(@/assets/images/frames/header-frame.svg);
+    transition: all 0.1s ease-in-out;
+}
+
+.connectBtn:hover {
+    color: #81d100;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(129, 209, 0, 0.3)) brightness(1.5);
 }

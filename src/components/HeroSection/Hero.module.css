@@ -53,6 +53,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     font-weight: 500;
+    transition: all 0.1s ease-in-out;
+}
+
+.buy:hover,
+.start:hover {
+    color: #81d100;
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 20px rgba(129, 209, 0, 0.3)) brightness(1.5);
 }
 
 .buy {
@@ -87,7 +95,6 @@
     }
 }
 @media (max-width: 550px) {
-
     .bgImage {
         height: 229px;
     }

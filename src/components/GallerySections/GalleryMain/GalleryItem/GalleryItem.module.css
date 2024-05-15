@@ -1,6 +1,13 @@
 .item {
     width: 254px;
     border: 1px solid white;
+    transition: all 0.1s ease-in-out;
+    background-color: #0b0b0e;
+}
+
+.item:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 20px rgba(129, 209, 0, 0.3)) brightness(1.5);
 }
 
 .top {
@@ -97,6 +104,10 @@
     cursor: pointer;
 }
 
+.detail:hover {
+    color: #81d100;
+}
+
 .fadeInSection {
     opacity: 0;
     transform: translateY(100px);
@@ -148,9 +159,10 @@
     .infoItem {
         font-size: 15px;
         height: 63px;
-    } 
+    }
 
-    .descPrice, .descItems {
+    .descPrice,
+    .descItems {
         font-size: 9px;
     }
 

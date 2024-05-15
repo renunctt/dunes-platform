@@ -50,6 +50,11 @@
     padding: 18px 36px;
     border-right: var(--primary-border);
     width: 100%;
+    transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+    color: #81d100;
 }
 .active {
     color: #81d100;

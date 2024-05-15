@@ -70,6 +70,9 @@
     background-image: url(../../assets/images/frames/main-frame-gray.svg);
 }
 
+.hr {
+    display: none;
+}
 
 .buy {
     height: 50px;
@@ -111,6 +114,6 @@
         line-height: 1.1;
     }
     .hr {
-        display: none;
+        display: block;
     }
 }

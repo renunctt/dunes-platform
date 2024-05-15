@@ -100,13 +100,13 @@
     height: 41px;
     background-image: url("../../assets/images/card/frame.svg");
     background-repeat: no-repeat;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .bottomBtn:hover {
     color: #81d100;
     transform: scale(1.01);
-    filter: drop-shadow(0 0 10px rgba(129, 209, 0, 0.3)) brightness(1.1);
+    filter: drop-shadow(0 0 10px rgba(129, 209, 0, 0.3));
 }
 .bottomBox span {
     display: flex;

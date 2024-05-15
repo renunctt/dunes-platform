@@ -54,13 +54,13 @@
     background-repeat: no-repeat;
     font-weight: 500;
     background-image: url(../../assets/images/frames/main-frame-green.svg);
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
     color: #81d100;
     transform: scale(1.01);
-    filter: drop-shadow(0 0 20px rgba(129, 209, 0, 0.3)) brightness(1.5);
+    filter: drop-shadow(0 0 20px rgba(129, 209, 0, 0.3));
 }
 
 .lineY {
@@ -179,18 +179,12 @@
     }
 
     .btn {
-        font-size: 15px;
-        margin-top: 26px;
+        font-size: 12px;
         margin-bottom: 36px;
         width: 140px;
-        margin-left: 35px;
+        height: 36px;
+        margin-left: 20px;
     }
-
-    .btn img {
-        width: 200px;
-        height: 46px;
-    }
-
     .box {
         position: relative;
         z-index: 10;
@@ -229,13 +223,13 @@
     }
 
     .totem {
-        left: 100px;
+        left: 150px;
         top: 263px;
         z-index: 1;
     }
 
     .totem img {
-        max-width: 300px;
+        max-width: 380px;
         min-width: none;
     }
 }

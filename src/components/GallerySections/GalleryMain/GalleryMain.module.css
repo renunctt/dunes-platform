@@ -32,6 +32,10 @@
     font-weight: 500;
     background-color: #0C0C0F;
     background-image: url(../../../assets/images/frames/main-frame-green.svg);
+    transition: all 0.3s ease-in-out;
+}
+.button:hover {
+    color: #81d100;
 }
 
 .lines {

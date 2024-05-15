@@ -1,112 +1,115 @@
 .top {
-	width: 384px;
-	height: 213px;
-	border: var(--primary-border);
-	border-bottom: none;
+    width: 384px;
+    height: 213px;
+    border: var(--primary-border);
+    border-bottom: none;
 }
 
 .title {
-	width: 192px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	font-weight: 500;
-	font-size: 41px;
-	border-top: var(--primary-border);
-	border-right: var(--primary-border);
-	margin-top: 89px;
+    width: 192px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 41px;
+    border-top: var(--primary-border);
+    border-right: var(--primary-border);
+    margin-top: 89px;
 }
 
 .titleLeft {
-	transform: translateY(25px);
+    transform: translateY(25px);
 }
 
 .titleRight {
-	transform: translate(1px, -25px) rotate(180deg);
+    transform: translate(1px, -25px) rotate(180deg);
 }
 
 .box {
-	height: 60px;
-	width: 100%;
-	border-top: var(--primary-border);
-	display: flex;
+    height: 60px;
+    width: 100%;
+    border-top: var(--primary-border);
+    display: flex;
 }
 
 .box button {
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .upcoming {
-	width: 192px;
-	border-right: var(--primary-border);
-    transition: all 0.1s ease-in-out;
+    width: 192px;
+    border-right: var(--primary-border);
+    transition: all 0.3s ease-in-out;
 }
 
 .upcoming:hover {
     color: #fff;
 }
 .finished {
-	width: 190px;
-    transition: all 0.1s ease-in-out;
+    width: 190px;
 }
 
-.finished>p:hover {
+.finished > p {
+    transition: all 0.3s ease-in-out;
+}
+
+.finished > p:hover {
     color: #fff;
 }
 
 .launchItem {
-	position: relative;
-	z-index: 20;
-	top: -100px;
+    position: relative;
+    z-index: 20;
+    top: -100px;
 }
 
 .topLine {
-	position: relative;
-	border: var(--primary-border);
-	border-bottom: none;
-	height: 47px;
-	display: flex;
-	justify-content: space-between;
-	z-index: -1;
+    position: relative;
+    border: var(--primary-border);
+    border-bottom: none;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
 }
 
 .line1 {
-	width: 192px;
-	height: 100%;
-	border-right: var(--primary-border);
+    width: 192px;
+    height: 100%;
+    border-right: var(--primary-border);
 }
 
 .line2 {
-	width: 191px;
-	height: 100%;
-	border-right: var(--primary-border);
+    width: 191px;
+    height: 100%;
+    border-right: var(--primary-border);
 }
 
 .line3 {
-	width: 218px;
-	height: 100%;
-	border-right: var(--primary-border);
+    width: 218px;
+    height: 100%;
+    border-right: var(--primary-border);
 }
 
 .line4 {
-	width: 192px;
-	height: 100%;
-	margin-left: auto;
-	border-left: var(--primary-border);
+    width: 192px;
+    height: 100%;
+    margin-left: auto;
+    border-left: var(--primary-border);
 }
 
 .line5 {
-	width: 190px;
-	height: 100%;
-	border-left: var(--primary-border);
+    width: 190px;
+    height: 100%;
+    border-left: var(--primary-border);
 }
 
-@media  (max-width: 890px) {
-	.top {
+@media (max-width: 890px) {
+    .top {
         width: 100%;
     }
     .left {
@@ -118,47 +121,47 @@
     .topLine {
         width: 100%;
     }
-	.line1 {
-		width: 50%;
-	}
-	.line2 {
-		display: none;
-	}
+    .line1 {
+        width: 50%;
+    }
+    .line2 {
+        display: none;
+    }
 
-	.line3 {
-		display: none;
-	}
-	
-	.line4 {
-		display: none;
-	}
-	
-	.line5 {
-		display: none;
-	}
+    .line3 {
+        display: none;
+    }
+
+    .line4 {
+        display: none;
+    }
+
+    .line5 {
+        display: none;
+    }
 }
 
-@media  (max-width: 410px) {
-	.top {
-		width: 100%;
-	}
+@media (max-width: 410px) {
+    .top {
+        width: 100%;
+    }
 
-	.title {
-		font-size: 30px;
-		height: 63px;
-		width: 175px;
-	}
+    .title {
+        font-size: 30px;
+        height: 63px;
+        width: 175px;
+    }
 
-	.upcoming {
-		min-width: 175px;
-		max-width: 175px;
-	}
+    .upcoming {
+        min-width: 175px;
+        max-width: 175px;
+    }
 
-	.topLine {
-		width: 100%;
-	}
+    .topLine {
+        width: 100%;
+    }
 
-	.line1 {
-		width: 175px;
-	}
+    .line1 {
+        width: 175px;
+    }
 }

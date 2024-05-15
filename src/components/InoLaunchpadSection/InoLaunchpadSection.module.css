@@ -76,20 +76,24 @@
 .upcoming {
     width: 192px;
     border-right: var(--primary-border);
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .upcoming:hover {
     color: #fff;
 }
 .finished {
-	width: 190px;
-    transition: all 0.1s ease-in-out;
+    width: 190px;
 }
 
-.finished>p:hover {
+.finished > p {
+    transition: all 0.3s ease-in-out;
+}
+
+.finished > p:hover {
     color: #fff;
 }
+
 .items {
     display: flex;
     justify-content: space-between;
@@ -103,10 +107,10 @@
         flex-direction: column;
         gap: 24px;
     }
-    
-.right{
-    height: 120px;
-}
+
+    .right {
+        height: 120px;
+    }
 }
 
 .topLine {

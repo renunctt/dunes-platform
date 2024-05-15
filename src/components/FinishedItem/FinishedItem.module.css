@@ -1,12 +1,12 @@
 .item {
     width: 383px;
     border: 1px solid white;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: #0b0b0e;
 }
 .item:hover {
     transform: scale(1.01);
-    filter: drop-shadow(0 0 20px rgba(129, 209, 0, 0.3)) brightness(1.5);
+    filter: drop-shadow(0 0 20px rgba(129, 209, 0, 0.3));
 }
 
 .top {
@@ -91,6 +91,7 @@
 
 .socialIcon {
     width: 27px;
+    transform: color .3s ease-in-out;
 }
 
 .detail {
@@ -103,6 +104,7 @@
     height: 64px;
     color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .detail:hover {

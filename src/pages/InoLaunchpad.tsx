@@ -4,7 +4,7 @@ import InoLaunchpadSection from "../components/InoLaunchpadSection/InoLaunchpadS
 import JoinSection from "../components/JoinSection/JoinSection";
 import { useEffect } from 'react'
 
-const Title = () => <>Getting the <span>best NFTs</span> just became easier</>;
+const Title = () => <>Acquiring <span>top NFTs</span> just got simpler</>;
 
 const InoLaunchpad = () => {
     useEffect(() => {
@@ -15,7 +15,7 @@ const InoLaunchpad = () => {
         <>
             <Hero
                 title={<Title />}
-                text={"Grab the best NFT project spots just at the time of the launch at Seedify INO Launchpad."}
+                text={"Be the first to get the best NFT project spots on Dunes INO Launchpad"}
                 img={HeroImg}
                 firstButton="buy $DUNE"
             />

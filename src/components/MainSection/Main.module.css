@@ -70,9 +70,6 @@
     background-image: url(../../assets/images/frames/main-frame-gray.svg);
 }
 
-.hr {
-    display: none;
-}
 
 .buy {
     height: 50px;
@@ -82,8 +79,6 @@
     .title {
         padding-top: 32px;
     }
-
-
 
     .desc {
         font-size: 16px;
@@ -108,14 +103,14 @@
 }
 
 @media screen and (max-width: 550px) {
-  .title {
-      padding-top: 64px;
-      max-width: none;
-      width: 100%;
-      font-size: 42px;
-      line-height: 1.1;
-  }
-  .hr {
-    display: block;
-}
+    .title {
+        padding-top: 64px;
+        max-width: none;
+        width: 100%;
+        font-size: 42px;
+        line-height: 1.1;
+    }
+    .hr {
+        display: none;
+    }
 }

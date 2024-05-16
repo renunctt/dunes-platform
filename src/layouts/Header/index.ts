@@ -5,7 +5,7 @@ export const navIncubationLinks = [
 ]
 
 export const navProtocolLinks = [
-  { text: 'IDO Launchpad', link: '/ido-launchpad', icon: 'launchpad' },
+  { text: 'IDO Launchpad', link: '/', icon: 'launchpad' },
   { text: 'INO Launchpad', link: '/ino-launchpad', icon: 'launchpad' },
   { text: 'Staking', 			 link: '/staking', 			 icon: 'staking' }
 ]

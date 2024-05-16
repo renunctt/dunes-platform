@@ -2,6 +2,7 @@ import styles from './Main.module.css'
 import bgVideo from '../../assets/videos/main-bg.mp4'
 import { useContext, useEffect, useRef } from 'react'
 import { LoadContext } from '@/App'
+import mobileBgVideo from '@/assets/videos/mobile-main-bg.mp4'
 
 const MyHr = () => {
 	return <p className={styles.hr}>{'\n'}</p>
@@ -31,6 +32,8 @@ export const Main = () => {
 		}
 	}, [])
 
+  const video = window.innerWidth > 890 ? bgVideo : mobileBgVideo
+
 	return (
 		<main className={styles.main}>
 			<video
@@ -40,7 +43,7 @@ export const Main = () => {
 				muted
 				loop
 				playsInline
-				src={bgVideo}
+				src={video}
 				onLoad={() => setIsLoaded(true)}
 			/>
 			<div className={`${styles.mainWrapper} my-container`}>
